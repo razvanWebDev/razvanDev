@@ -88,7 +88,7 @@ header ul li a {
 
 /* LANDING PAGE */
 
-.landing-page {
+#landing-page {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -97,7 +97,7 @@ header ul li a {
     height: 100vh;
     padding-top: 10vh;
     padding-bottom: 20vh;
-    background-image: linear-gradient(147deg, rgba(8, 8, 8, 0.95) 0%, rgba(8, 8, 8, 0.95) 100%), url(img/header-background.jpg);
+    background-image: linear-gradient(147deg, rgba(8, 8, 8, 0.9) 0%, rgba(8, 8, 8, 0.9) 100%), url(img/header-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -154,7 +154,7 @@ header ul li a {
 
 .social {
     position: absolute;
-    bottom: 1vh;
+    bottom: 4vh;
 }
 
 .social img {
@@ -167,8 +167,12 @@ header ul li a {
     opacity: 1;
 }
 
-.social img:hover {
+.linkedIn:hover {
     transform: rotate(180deg);
+}
+
+.github:hover {
+    transform: rotate(-180deg);
 }
 
 /* SKILLS SECTION */
@@ -180,12 +184,11 @@ header ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
-#skills-section h1 {
+#skills-section h2 {
     font-size: 30px;
-    margin-top: 20px;
 }
 
 #skills-section h3 {
@@ -209,6 +212,18 @@ header ul li a {
 
 .es6 {
     width: 60px;
+}
+
+/* PORTFOLIO */
+#portfolio-section {
+   background-color: rgb(0, 0, 0);
+   color: #FED900;
+   padding: 30px;
+   text-align: center;
+}
+
+#portfolio-section h2 {
+    font-size: 30px;
 }
 
 /* ANIMATIONS */
