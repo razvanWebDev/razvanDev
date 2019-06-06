@@ -11,6 +11,11 @@ body {
 a {
     text-decoration: none;
     outline: none;
+    transition: all 0.1s;
+}
+
+a:hover {
+    opacity: 0.75;
 }
 
 /* HEADER */
@@ -34,8 +39,13 @@ header ul{
 
 header ul li a {
     padding: 0px 20px ;
-    color: #FED900;
-  
+    color: #FED900; 
+    
+}
+
+
+.current {
+    color: whitesmoke;
 }
 
 .burgerNav {
@@ -73,7 +83,7 @@ header ul li a {
   .burger div {
     width: 20px;
     height: 3px;
-    background-color: rgb(255, 255, 255);
+    background-color:#FED900;
     margin: 3px;
     transition: all 0.5s ease;
 }
@@ -81,10 +91,13 @@ header ul li a {
 /* LANDING PAGE */
 .landing-page {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     height: 100vh;
+    padding-top: 10vh;
+    padding-bottom:20vh;
     background-image:  linear-gradient(147deg, rgba(8, 8, 8, 0.95) 0%, rgba(8, 8, 8, 0.95) 100%), url(img/header-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,11 +106,8 @@ header ul li a {
 
 .profile {
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 20vh;
-    left: 3%;
+    animation: drop 1.5s ease;
 }
 
 .profile img {
@@ -128,15 +138,16 @@ header ul li a {
 }
 
 .aboutMe {
-    position: absolute;
-    bottom: 20vh;
-    right: 15%;
-    width: 40%;
+    width: 50%;
     color: #FED900;
     border: 1px solid #FED900;
     border-radius: 10px;
     padding: 10px;
     cursor: default;
+    opacity: 0;
+    animation: slide 1.5s ease;
+    animation-delay: 0.55s;
+    animation-fill-mode: forwards;
 }
 
 .aboutMe a {
@@ -145,12 +156,43 @@ header ul li a {
 
 .social {
     position: absolute;
-    bottom: 20px;
-    margin: 0px auto;
+    bottom: 1vh;
 }
 
 .social img {
     width: 40px;
     margin: 0 20px;
+    transition: all 0.2s ease-in-out;
 }
 
+.social a:hover{
+    opacity: 1;
+}
+
+.social img:hover{
+    transform:  rotate(180deg);
+}
+
+
+/* ANIMATIONS */
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-10vh);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
