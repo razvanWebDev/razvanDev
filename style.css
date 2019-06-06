@@ -19,6 +19,7 @@ a:hover {
 }
 
 /* HEADER */
+
 header {
     position: fixed;
     display: flex;
@@ -29,20 +30,17 @@ header {
     padding-right: 3%;
     border-bottom: 1px solid #FED900;
     z-index: 9;
-
 }
 
-header ul{
+header ul {
     display: flex;
     list-style-type: none;
 }
 
 header ul li a {
-    padding: 0px 20px ;
-    color: #FED900; 
-    
+    padding: 0px 20px;
+    color: #FED900;
 }
-
 
 .current {
     color: whitesmoke;
@@ -71,24 +69,25 @@ header ul li a {
     text-align: right;
     line-height: 1.1;
 }
-  
-  .burgerNav h1 {
+
+.burgerNav h1 {
     margin: 0;
 }
-  
-  .burgerNav p {
+
+.burgerNav p {
     margin: 0;
 }
-  
-  .burger div {
+
+.burger div {
     width: 20px;
     height: 3px;
-    background-color:#FED900;
+    background-color: #FED900;
     margin: 3px;
     transition: all 0.5s ease;
 }
 
 /* LANDING PAGE */
+
 .landing-page {
     display: flex;
     flex-direction: column;
@@ -97,12 +96,11 @@ header ul li a {
     position: relative;
     height: 100vh;
     padding-top: 10vh;
-    padding-bottom:20vh;
-    background-image:  linear-gradient(147deg, rgba(8, 8, 8, 0.95) 0%, rgba(8, 8, 8, 0.95) 100%), url(img/header-background.jpg);
+    padding-bottom: 20vh;
+    background-image: linear-gradient(147deg, rgba(8, 8, 8, 0.95) 0%, rgba(8, 8, 8, 0.95) 100%), url(img/header-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 .profile {
     display: flex;
@@ -165,16 +163,56 @@ header ul li a {
     transition: all 0.2s ease-in-out;
 }
 
-.social a:hover{
+.social a:hover {
     opacity: 1;
 }
 
-.social img:hover{
-    transform:  rotate(180deg);
+.social img:hover {
+    transform: rotate(180deg);
 }
 
+/* SKILLS SECTION */
+
+#skills-section {
+  text-align: center;
+    background-color: #FED900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#skills-section h1 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#skills-section h3 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.skills-types {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.skill-logo {
+    width: 80px;
+    margin: auto 30px;
+    filter: drop-shadow(0px 3px 1px black);
+}
+
+.es6 {
+    width: 60px;
+}
 
 /* ANIMATIONS */
+
 @keyframes drop {
     0% {
         opacity: 0;
