@@ -105,7 +105,7 @@ header ul li a {
 .profile {
     display: flex;
     align-items: center;
-    animation: drop 1.5s ease;
+    animation: drop 2s ease;
 }
 
 .profile img {
@@ -144,7 +144,7 @@ header ul li a {
     cursor: default;
     opacity: 0;
     animation: slide 1.5s ease;
-    animation-delay: 0.55s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -158,25 +158,25 @@ header ul li a {
 }
 
 .social img {
+    position: relative;
     width: 40px;
     margin: 0 20px;
     transition: all 0.2s ease-in-out;
+    opacity: 0;
+    animation-delay: 1s;
 }
 
-.social a:hover {
-    opacity: 1;
+.linkedIn {
+    animation: rollRight 1s ease;
+    animation-fill-mode: forwards;
 }
 
-.linkedIn:hover {
-    transform: rotate(180deg);
-}
-
-.github:hover {
-    transform: rotate(-180deg);
+.github {
+    animation: rollLeft 1s ease;
+    animation-fill-mode: forwards;
 }
 
 /* SKILLS SECTION */
-
 #skills-section {
   text-align: center;
     background-color: #FED900;
@@ -214,7 +214,7 @@ header ul li a {
     width: 60px;
 }
 
-/* PORTFOLIO */
+/* PORTFOLIO-SECTION */
 #portfolio-section {
    background-color: rgb(0, 0, 0);
    color: #FED900;
@@ -247,5 +247,39 @@ header ul li a {
     100% {
         opacity: 1;
         transform: translateX(0%);
+    }
+}
+
+@keyframes rollRight {
+    0% {opacity: 0;
+       transform: rotate(-360deg);
+        right: 75px;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0deg);
+        right: 0px;
+    }
+}
+
+@keyframes rollLeft {
+    0% {
+        opacity: 0;
+       transform: rotate(360deg);
+        left: 75px;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0deg);
+        left: 0px;
+    }
+}
+
+@keyframes rotateRight {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
     }
 }
