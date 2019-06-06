@@ -33,9 +33,49 @@ header ul li a {
   
 }
 
+/* LANDING PAGE */
 .landing-page {
+    position: relative;
     height: 100vh;
     background-image:  linear-gradient(147deg, rgba(8, 8, 8, 0.95) 0%, rgba(8, 8, 8, 0.95) 100%), url(img/header-background.jpg);
     background-repeat: no-repeat;
-  background-size: cover;
+    background-size: cover;
 }
+
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 15vh;
+    left: 10%;
+  
+}
+
+.profile img {
+    width: 175px;
+    border-radius: 50%;
+}
+
+.motto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: #FED900;
+    border-left: 2px solid #FED900;
+    padding-left: 20px;
+    margin-left: 20px;
+    height: 120px;
+}
+
+.motto h1 {
+    font-size: 30px;
+    line-height: 1;
+}
+
+.motto h2 {
+    font-size: 15px;
+}
+
