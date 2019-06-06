@@ -188,13 +188,15 @@ header ul li a {
 }
 
 /* CONTENT */
+
 section {
     padding: 30px 100px;
 }
 
 /* SKILLS SECTION */
+
 #skills-section {
-  text-align: center;
+    text-align: center;
     /* background-color: #FED900; */
     display: flex;
     flex-direction: column;
@@ -216,7 +218,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-  
 }
 
 .skill-logo {
@@ -230,10 +231,11 @@ section {
 }
 
 /* PORTFOLIO-SECTION */
+
 #portfolio-section {
-   background-color: black;
-   color: #FED900;
-   text-align: center;
+    background-color: black;
+    color: #FED900;
+    text-align: center;
 }
 
 .projects {
@@ -241,7 +243,11 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 100px;
+}
 
+.img-container {
+    position: relative;
+    text-align: center;
 }
 
 #portfolio-section h2 {
@@ -252,47 +258,49 @@ section {
     width: 100%;
     border-radius: 5px;
     transition-duration: .3s;
-  }
-  
-  .project-pic:hover+.project-links, .project-links:hover {
-    visibility: visible;
-    z-index: 9;
-  }
-  
-  .img-container:hover .project-pic {
+}
+
+.project-pic:hover+.project-links, .project-links:hover {
+    opacity: 1;
+}
+
+.img-container:hover .project-pic {
     opacity: 0.3;
-  }
-  
-  .project-links {
+}
+
+.project-links {
     position: absolute;
     bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    visibility: hidden;
+    opacity: 0;
     width: 50%;
     justify-content: space-between;
     padding: 5px;
     border-radius: 30px;
-  }
-  
-  .btn {
-    background-color: #3D9970;
+    transition: opacity .3s ease-in-out;
+}
+
+.btn {
+    background-color: #FED900;
     border-radius: 15px;
     border: none;
     outline: none;
     padding: 5px 20px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-  }
-  
-  .btn:hover {
-    background-color: #39CCCC;
-  }
-  
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
 
 /* CERTIFICATES-SECTION */
+
 #certificates-section {
     background-color: #FED900;
     color: black;
@@ -310,9 +318,10 @@ section {
 }
 
 /* EXPERIENCE-SECTION */
+
 #experience-section {
-  
-    background-color: black;;
+    background-color: black;
+    ;
     color: #FED900;
 }
 
@@ -350,8 +359,9 @@ section {
 }
 
 @keyframes rollRight {
-    0% {opacity: 0;
-       transform: rotate(-900deg);
+    0% {
+        opacity: 0;
+        transform: rotate(-900deg);
         right: 100%;
     }
     100% {
@@ -364,7 +374,7 @@ section {
 @keyframes rollLeft {
     0% {
         opacity: 0;
-       transform: rotate(900deg);
+        transform: rotate(900deg);
         left: 100%;
     }
     100% {
