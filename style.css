@@ -242,12 +242,15 @@ section {
     max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 100px;
+    grid-gap: 150px;
+}
+
+.project-div {
+    text-align: center;
 }
 
 .img-container {
     position: relative;
-    text-align: center;
 }
 
 #portfolio-section h2 {
@@ -296,7 +299,9 @@ section {
 }
 
 .btn:hover {
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    background-color: black;
+    color: #FED900;
 }
 
 /* CERTIFICATES-SECTION */
