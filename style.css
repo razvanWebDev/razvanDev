@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    padding-right: 3%;
+    border-bottom: 1px solid #FED900;
+
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 0px 20px ;
+    color: #FED900;
+  
+}
+
+.landing-page {
+    height: 100vh;
+    background-image:  linear-gradient(147deg, rgba(8, 8, 8, 0.95) 0%, rgba(8, 8, 8, 0.95) 100%), url(img/header-background.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+}
