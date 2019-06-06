@@ -8,6 +8,11 @@ body {
     font-family: 'Noto Sans HK', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    outline: none;
+}
+
 /* HEADER */
 header {
     position: fixed;
@@ -18,6 +23,7 @@ header {
     width: 100%;
     padding-right: 3%;
     border-bottom: 1px solid #FED900;
+    z-index: 9;
 
 }
 
@@ -27,14 +33,56 @@ header ul{
 }
 
 header ul li a {
-    text-decoration: none;
     padding: 0px 20px ;
     color: #FED900;
   
 }
 
+.burgerNav {
+    z-index: 2;
+    display: flex;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    visibility: hidden;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 40px;
+    max-width: 100%;
+    color: #FED900;
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    position: fixed;
+}
+
+#navMotto {
+    text-align: right;
+    line-height: 1.1;
+}
+  
+  .burgerNav h1 {
+    margin: 0;
+}
+  
+  .burgerNav p {
+    margin: 0;
+}
+  
+  .burger div {
+    width: 20px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 3px;
+    transition: all 0.5s ease;
+}
+
 /* LANDING PAGE */
 .landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: 100vh;
     background-image:  linear-gradient(147deg, rgba(8, 8, 8, 0.95) 0%, rgba(8, 8, 8, 0.95) 100%), url(img/header-background.jpg);
@@ -47,10 +95,9 @@ header ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 15vh;
-    left: 10%;
-  
+    position: absolute;
+    top: 20vh;
+    left: 3%;
 }
 
 .profile img {
@@ -68,14 +115,42 @@ header ul li a {
     padding-left: 20px;
     margin-left: 20px;
     height: 120px;
+    cursor: default;
 }
 
 .motto h1 {
-    font-size: 30px;
+    font-size: 2rem;
     line-height: 1;
 }
 
 .motto h2 {
-    font-size: 15px;
+    font-size: 0.9rem;
+}
+
+.aboutMe {
+    position: absolute;
+    bottom: 20vh;
+    right: 15%;
+    width: 40%;
+    color: #FED900;
+    border: 1px solid #FED900;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: default;
+}
+
+.aboutMe a {
+    color: whitesmoke;
+}
+
+.social {
+    position: absolute;
+    bottom: 20px;
+    margin: 0px auto;
+}
+
+.social img {
+    width: 40px;
+    margin: 0 20px;
 }
 
