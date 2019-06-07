@@ -110,7 +110,7 @@ header ul li a {
 
 /* LANDING PAGE */
 
-#landing-page {
+#home-section{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -416,7 +416,7 @@ table tr:last-child td:last-child {
 }
 
 .contact-container div {
-    width: 30%;
+    width: 50%;
 }
 
 input, textarea {

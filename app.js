@@ -63,9 +63,25 @@ function displayProjects(projects) {
     resultList.innerHTML = listItems.join('');
 }
 
+//SCROLL PAGE
+$('.menuButtons').on('click', function (e) {
+    const idName = $(this).attr('data-page');
+    const headerHeight = $(window).height() * 0.09;
+    $('.menuButtons').removeClass("current");
+   this.classList.add("current");
+    $('html, body').animate({
+        scrollTop: $("#" + idName + "-section").offset().top - headerHeight
+    }, 'slow');
+});
+
+
+
+
 
 // Event listeners
 window.addEventListener("scroll", headerBackground);
 window.addEventListener("load", headerBackground);
 
+
 loadProjects();
+// scrollPage ();
