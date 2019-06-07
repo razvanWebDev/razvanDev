@@ -426,12 +426,12 @@ input, textarea {
     border-bottom: 2px solid #141414;
     padding-left: 5px;
     color: #141414;
+    transition: all 0.3s ease-in-out;
 }
 
 textarea:focus, input:focus {
     outline: none;
     border-bottom: 2px solid #FED900;
-    transition: 0.3s;
 }
 
 input {
@@ -466,6 +466,18 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.contact-details p img {
+    height: 24px;
+    margin-right: 20px;
+    transform: translateY(28%);
+}
+
+.contact-details p a {
+  color: #FED900;
+  text-shadow: 1px 1px 1px #141414;
 }
 
 .contact-social {
@@ -485,6 +497,14 @@ input {
     height: 10vh;
     width: 100%;
     background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-section h1 {
+    color: #FED900;
+    font-size: 12px;
 }
 
 /* ANIMATIONS */
