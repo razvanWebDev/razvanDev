@@ -327,6 +327,10 @@ header ul li a {
     text-align: center;
 }
 
+#certificates-section li {
+    font-size: 20px;
+}
+
 #certificates-section a {
     color: whitesmoke;
     text-shadow: 1px 1px 2px #141414;
