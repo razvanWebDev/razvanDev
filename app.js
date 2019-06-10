@@ -12,14 +12,17 @@ const links = document.querySelectorAll(".menuButtons");
 function headerBackground() {
     const y = window.scrollY;
     const x = window.innerWidth;
-
-    if (x >= 768 && y > 20) {
+    if(x >= 768) {
+        if (y > 20) {
         header.classList.add('yellow-header');
-        navLinks.forEach((link) => link.classList.add('black-text'));
+        links.forEach((link) => link.classList.add('black-text'));
     } else {
         header.classList.remove('yellow-header');
-        navLinks.forEach((link) => link.classList.remove('black-text'));
+        links.forEach((link) => link.classList.remove('black-text'));
     }
+    }
+    
+
 }
 
 
@@ -74,9 +77,14 @@ function displayProjects(projects) {
 //SCROLL PAGE
 $('.menuButtons').on('click', function (e) {
     const idName = $(this).attr('data-page');
-    const headerHeight = $(window).height() * 0.09;
+    const x = window.innerWidth;
+    let headerHeight = $(window).height() * 0.09;
+    if(x <= 768) {
+        headerHeight = -0.1;
+    }
+
     $('.menuButtons').removeClass("current");
-   this.classList.add("current");
+    this.classList.add("current");
     $('html, body').animate({
         scrollTop: $("#" + idName + "-section").offset().top - headerHeight
     }, 'slow');
@@ -114,17 +122,16 @@ const navClose = () => {
     burger.classList.remove("toggle");
     $('body').removeClass('navBar-open');
     navLinks.forEach((link) => {
-      link.style.animation = "";
+        link.style.animation = "";
     })
-  }
-  
+}
 
-  const closeNav = (event) => {
-    if ((nav.classList.contains('nav-active')) && (event.target != nav) && (event.target != burger1 && event.target != burger2 && event.target != burger3)) 
-    {
-      navClose();
+
+const closeNav = (event) => {
+    if ((nav.classList.contains('nav-active')) && (event.target != nav) && (event.target != burger1 && event.target != burger2 && event.target != burger3)) {
+        navClose();
     }
-  }
+}
 
 
 
