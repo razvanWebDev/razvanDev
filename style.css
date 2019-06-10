@@ -68,36 +68,14 @@ header ul li a {
     color: whitesmoke;
 }
 
-.burgerNav {
-    z-index: 2;
-    display: flex;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    visibility: hidden;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 15px;
-    padding-left: 15px;
-    height: 40px;
-    max-width: 100%;
-    color: #FED900;
-    background-color: rgba(0, 0, 0, 0.85);
-    cursor: pointer;
+.burger {
     position: fixed;
-}
-
-#navMotto {
-    text-align: right;
-    line-height: 1.1;
-}
-
-.burgerNav h1 {
-    margin: 0;
-}
-
-.burgerNav p {
-    margin: 0;
+    top: 15px;
+    right: 15px;
+    display: none;
+    background-color: rgba(20, 20, 20, 0.85);
+    padding: 3px;
+    border-radius: 5px; 
 }
 
 .burger div {
@@ -590,6 +568,57 @@ input {
     }
 }
 
+/* RESPONSIVE */
+
+/* Navbar animation */
+@keyframes navSlide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes navSlideOut {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes navFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-135deg) translate(-5px, 6px);
+    position: relative;
+    top: 1px;
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(135deg) translate(-5px, -6px);
+    position: relative;
+
+}
+
+
+
+
 @media only screen and (max-width: 1024px) {
     section {
         padding: 60px;
@@ -621,12 +650,55 @@ input {
     }
 }
 
+
+
 @media only screen and (max-width: 768px) {
-    p {
-        font-size: 12px;
+    /* burger & nav */
+    .navBar-open {
+        overflow: hidden;
     }
     header {
-        display: none;
+        color: none;
+        border: none;
+    }
+    #header-links {
+        position: absolute;
+        right: 0px;
+        top: 0;
+        height: 100vh;  
+        z-index: 1;
+        background-color: rgba(20, 20, 20, 0.85);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 0;
+        width: 60%;
+        transform: translateX(100%);
+        animation: navSlideOut 0s forwards;
+    }
+    #header-links li:last-of-type {
+        margin-bottom: 10vh;
+    }
+    #header-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        z-index: 2;
+    }
+    .burger div {
+        transition: all 0.5s ease;
+    }
+    .nav-active {
+        animation: navSlide 0.5s ease both;
+    }
+    .nav-off {
+        animation: navSlideOut 0.5s ease both;
+    }
+    /* general */
+    p {
+        font-size: 12px;
     }
     section {
         padding: 30px 20px;

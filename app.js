@@ -1,11 +1,19 @@
 const header = document.querySelector('header');
-const navLinks = document.querySelectorAll('.menuButtons');
+
+const burger = document.querySelector('.burger');
+const burger1 = document.querySelector('.line1');
+const burger2 = document.querySelector('.line2');
+const burger3 = document.querySelector('.line3');
+const nav = document.querySelector('#header-links');
+const navLinks = document.querySelectorAll('.menu-buttons');
+const links = document.querySelectorAll(".menuButtons");
 
 // Change header background on scroll
 function headerBackground() {
     const y = window.scrollY;
+    const x = window.innerWidth;
 
-    if (y > 20) {
+    if (x >= 768 && y > 20) {
         header.classList.add('yellow-header');
         navLinks.forEach((link) => link.classList.add('black-text'));
     } else {
@@ -74,14 +82,58 @@ $('.menuButtons').on('click', function (e) {
     }, 'slow');
 });
 
+const navSlide = () => {
+    burger.addEventListener('click', () => {
+        // toggle nav
+        nav.classList.toggle('nav-active');
+        if (nav.classList.contains("nav-active")) {
+            nav.style.animation = `navSlide 0.5s forwards`;
+            $('body').addClass('navBar-open');
+        } else {
+            nav.style.animation = `navSlideOut 0.5s`;
+            $('body').removeClass('navBar-open');
+        }
 
+        // Amimate links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = "";
+            } else {
+                link.style.animation = `navFade 0.5s ${index / 5 + 0.5}s ease forwards`;
+            }
+        });
+
+        // burger animation
+        burger.classList.toggle("toggle");
+    });
+}
+
+const navClose = () => {
+    nav.style.animation = `navSlideOut 0.5s`;
+    nav.classList.remove('nav-active');
+    burger.classList.remove("toggle");
+    $('body').removeClass('navBar-open');
+    navLinks.forEach((link) => {
+      link.style.animation = "";
+    })
+  }
+  
+
+  const closeNav = (event) => {
+    if ((nav.classList.contains('nav-active')) && (event.target != nav) && (event.target != burger1 && event.target != burger2 && event.target != burger3)) 
+    {
+      navClose();
+    }
+  }
 
 
 
 // Event listeners
 window.addEventListener("scroll", headerBackground);
 window.addEventListener("load", headerBackground);
+window.addEventListener('mouseup', closeNav)
 
 
 loadProjects();
-// scrollPage ();
+navSlide();
+
