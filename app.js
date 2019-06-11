@@ -1,4 +1,5 @@
-const header = document.querySelector('header');
+// const header = document.querySelector('header');
+const header = $('header');
 
 const burger = document.querySelector('.burger');
 const burger1 = document.querySelector('.line1');
@@ -8,22 +9,7 @@ const nav = document.querySelector('#header-links');
 const navLinks = document.querySelectorAll('.menu-buttons');
 const links = document.querySelectorAll(".menuButtons");
 
-// Change header background on scroll
-function headerBackground() {
-    const y = window.scrollY;
-    const x = window.innerWidth;
-    if(x >= 768) {
-        if (y > 20) {
-        header.classList.add('yellow-header');
-        links.forEach((link) => link.classList.add('black-text'));
-    } else {
-        header.classList.remove('yellow-header');
-        links.forEach((link) => link.classList.remove('black-text'));
-    }
-    }
-    
 
-}
 
 
 //Load Projects from JSON
@@ -31,7 +17,6 @@ function loadProjects() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            //    console.log('response: ' + xhttp.responseText);
             var projects = JSON.parse(xhttp.responseText);
             displayProjects(projects);
         }
@@ -74,12 +59,49 @@ function displayProjects(projects) {
     resultList.innerHTML = listItems.join('');
 }
 
+// Change header background on scroll
+function headerBackground() {
+    const y = window.scrollY;
+    const x = window.innerWidth;
+    if (x >= 768) {
+        if (y > 20) {
+            header.addClass('yellow-header');
+            links.forEach((link) => link.classList.add('black-text'));
+        } else {
+            header.removeClass('yellow-header');
+            links.forEach((link) => link.classList.remove('black-text'));
+        }
+    }
+}
+
+//Change active navlinks on scroll
+var sections = $('section');
+    var nav_height = header.outerHeight();
+
+$(window).on('scroll', function () {
+    var cur_pos = $(this).scrollTop();
+
+    sections.each(function () {
+        var top = $(this).offset().top - nav_height- 200,
+            bottom = top + $(this).outerHeight();
+
+        if (cur_pos >= top && cur_pos <= bottom) {
+            header.find('a').removeClass('current');
+            header.find('a[href="#' + $(this).attr('id') + '"]').addClass('current');
+            
+        }
+    });
+})
+
+
+
+
 //SCROLL PAGE
 $('.menuButtons').on('click', function (e) {
     const idName = $(this).attr('data-page');
     const x = window.innerWidth;
     let headerHeight = $(window).height() * 0.09;
-    if(x <= 768) {
+    if (x <= 768) {
         headerHeight = -0.1;
     }
 
@@ -138,7 +160,10 @@ const closeNav = (event) => {
 // Event listeners
 window.addEventListener("scroll", headerBackground);
 window.addEventListener("load", headerBackground);
-window.addEventListener('mouseup', closeNav)
+window.addEventListener('mouseup', closeNav);
+window.addEventListener('scroll', () => {
+    console.log(window.scrollIntoView);
+})
 
 
 loadProjects();
