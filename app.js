@@ -1,8 +1,6 @@
-// const header = document.querySelector('header');
 const header = $('header');
 const nav_height = header.outerHeight();
 const sections = $('section');
-
 const burger = document.querySelector('.burger');
 const burger1 = document.querySelector('.line1');
 const burger2 = document.querySelector('.line2');
@@ -10,7 +8,6 @@ const burger3 = document.querySelector('.line3');
 const nav = document.querySelector('#header-links');
 const navLinks = document.querySelectorAll('.menu-buttons');
 const links = document.querySelectorAll(".menuButtons");
-
 
 
 
@@ -31,14 +28,12 @@ function loadProjects() {
 function displayProjects(projects) {
     const resultList = document.querySelector('.projects');
     const listItems = projects.map(function (project) {
-
         const name = project.name;
         const image = project.imgPath;
         const codeLink = project.codeLink;
         const demoLink = project.demoLink;
         const description = project.description;
         const skillsUsed = project.skillsUsed;
-
 
         return `<div class="project-div">
                 <h3>${name} </h3>
@@ -97,6 +92,7 @@ $('.menuButtons').on('click', function (e) {
     const idName = $(this).attr('data-page');
     const x = window.innerWidth;
     let headerHeight = $(window).height() * 0.09;
+
     if (x <= 768) {
         headerHeight = -0.1;
     }
