@@ -57,7 +57,6 @@ function displayProjects(projects) {
                 <p>${skillsUsed}</p>
               </div>`;
     })
-
     resultList.innerHTML = listItems.join('');
 }
 
@@ -86,18 +85,12 @@ const linkCurrentState = () => {
         const bottom = top + $(this).outerHeight();
         if (cur_pos >= top && cur_pos <= bottom) {
             header.find('a').removeClass('current');
-            let linkName =   $(this).attr('id');
+            let linkName = $(this).attr('id');
             linkName = linkName.slice(0, linkName.length - 8);
             header.find(`a[data-page= ${linkName}]`).addClass('current');
         }
     });
 }
-
-
-
-
-
-
 
 //SCROLL PAGE
 $('.menuButtons').on('click', function (e) {
