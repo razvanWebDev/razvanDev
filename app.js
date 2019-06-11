@@ -105,8 +105,6 @@ $('.menuButtons').on('click', function (e) {
         headerHeight = -0.1;
     }
 
-    $('.menuButtons').removeClass("current");
-    this.classList.add("current");
     $('html, body').animate({
         scrollTop: $("#" + idName + "-section").offset().top - headerHeight
     }, 'slow');
