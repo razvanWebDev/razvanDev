@@ -1,5 +1,7 @@
 // const header = document.querySelector('header');
 const header = $('header');
+const nav_height = header.outerHeight();
+const sections = $('section');
 
 const burger = document.querySelector('.burger');
 const burger1 = document.querySelector('.line1');
@@ -14,10 +16,10 @@ const links = document.querySelectorAll(".menuButtons");
 
 //Load Projects from JSON
 function loadProjects() {
-    var xhttp = new XMLHttpRequest();
+    const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            var projects = JSON.parse(xhttp.responseText);
+            const projects = JSON.parse(xhttp.responseText);
             displayProjects(projects);
         }
     }
@@ -60,7 +62,7 @@ function displayProjects(projects) {
 }
 
 // Change header background on scroll
-function headerBackground() {
+const headerBackground = () => {
     const y = window.scrollY;
     const x = window.innerWidth;
     if (x >= 768) {
@@ -75,23 +77,24 @@ function headerBackground() {
 }
 
 //Change active navlinks on scroll
-var sections = $('section');
-    var nav_height = header.outerHeight();
 
-$(window).on('scroll', function () {
-    var cur_pos = $(this).scrollTop();
+const linkCurrentState = () => {
+    const cur_pos = $(this).scrollTop();
 
     sections.each(function () {
-        var top = $(this).offset().top - nav_height- 200,
-            bottom = top + $(this).outerHeight();
-
+        const top = $(this).offset().top - nav_height - 200;
+        const bottom = top + $(this).outerHeight();
         if (cur_pos >= top && cur_pos <= bottom) {
             header.find('a').removeClass('current');
-            header.find('a[href="#' + $(this).attr('id') + '"]').addClass('current');
-            
+            let linkName =   $(this).attr('id');
+            linkName = linkName.slice(0, linkName.length - 8);
+            header.find(`a[data-page= ${linkName}]`).addClass('current');
         }
     });
-})
+}
+
+
+
 
 
 
@@ -156,12 +159,12 @@ const closeNav = (event) => {
 
 
 // Event listeners
-window.addEventListener("scroll", headerBackground);
-window.addEventListener("load", headerBackground);
+window.addEventListener('scroll', headerBackground);
+window.addEventListener('load', headerBackground);
 window.addEventListener('mouseup', closeNav);
-window.addEventListener('scroll', () => {
-    console.log(window.scrollIntoView);
-})
+window.addEventListener('load', linkCurrentState);
+window.addEventListener('scroll', linkCurrentState);
+
 
 
 loadProjects();
