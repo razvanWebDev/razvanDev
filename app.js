@@ -1,3 +1,4 @@
+//DOM elements
 const header = $('header');
 const nav_height = header.outerHeight();
 const sections = $('section');
