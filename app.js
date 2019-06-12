@@ -11,7 +11,6 @@ const navLinks = document.querySelectorAll('.menu-buttons');
 const links = document.querySelectorAll(".menuButtons");
 
 
-
 //Load Projects from JSON
 function loadProjects() {
     const xhttp = new XMLHttpRequest();
