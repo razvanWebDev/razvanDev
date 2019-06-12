@@ -2,7 +2,7 @@
     {
         "name": "My First CV",
         "imgPath": "img/projects/CV-RazvanCrisan.png",
-        "codeLink": "https://github.com/razvanwebdev/node-fitness-members-app",
+        "codeLink": "https://github.com/razvanWebDev/CV-razvanCrisan",
         "demoLink": "https://razvanwebdev.github.io/CV-razvanCrisan/",
         "description": "My first personal website  which I created while learning to code",
         "skillsUsed": "Skills used: HTML, CSS, JavaScript, NodeJS, JQuery, AJAX, MySQL, JSON."
