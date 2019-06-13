@@ -684,7 +684,7 @@ input {
         overflow: hidden;
     }
     header {
-        background-color: rgba(20, 20, 20, 0.85);
+        background-color: none;
         border: none;
     }
     #header-links {
