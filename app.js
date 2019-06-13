@@ -75,7 +75,7 @@ const headerBackground = () => {
 const showHeaderName = () => {
     const width  = window.innerWidth;
     const y = window.innerHeight;
-    if(width <= 768 && window.scrollY > y * 0.95) {
+    if(width <= 768 && window.scrollY > y * 0.899) {
         $('#header-name').fadeIn();
         header.css({"background-color":"rgba(20, 20, 20, 0.85)"});
     }else{
