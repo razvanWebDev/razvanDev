@@ -91,11 +91,7 @@ const linkCurrentState = () => {
 $('.menuButtons').on('click', function (e) {
     const idName = $(this).attr('data-page');
     const x = window.innerWidth;
-    let headerHeight = $(window).height() * 0.09;
-
-    if (x <= 768) {
-        headerHeight = -0.1;
-    }
+    let headerHeight = $(window).height() * 0.1;
 
     $('html, body').animate({
         scrollTop: $("#" + idName + "-section").offset().top - headerHeight
