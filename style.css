@@ -69,6 +69,7 @@ header ul li a {
 }
 
 #header-name {
+    display: none;
     position: absolute;
     left: 7%;
     text-align: right;
@@ -76,14 +77,14 @@ header ul li a {
 }
 
 #header-name h1 {
-font-size: 25px;
+font-size: 22px;
 line-height: 1;
 letter-spacing: 2px;
 }
 
 #header-name h2 {
     
-font-size: 14px;
+font-size: 12px;
 }
 
 .burger {

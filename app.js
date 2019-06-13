@@ -1,7 +1,7 @@
 //DOM elements
 const header = $('header');
 const nav_height = header.outerHeight();
-const sections = $('section');
+const headerName = document.querySelector('#header-name');
 const burger = document.querySelector('.burger');
 const burger1 = document.querySelector('.line1');
 const burger2 = document.querySelector('.line2');
@@ -9,6 +9,7 @@ const burger3 = document.querySelector('.line3');
 const nav = document.querySelector('#header-links');
 const navLinks = document.querySelectorAll('.menu-buttons');
 const links = document.querySelectorAll(".menuButtons");
+const sections = $('section');
 
 
 //Load Projects from JSON
@@ -70,7 +71,18 @@ const headerBackground = () => {
     }
 }
 
-//Change active navlinks on scroll
+//Show header name on max-width of 768px
+const showHeaderName = () => {
+    const width  = window.innerWidth;
+    const y = window.innerHeight;
+    if(width <= 768 && window.scrollY > y * 0.95) {
+        $('#header-name').fadeIn();
+    }else{
+        $('#header-name').fadeOut();
+    }
+}
+
+//Change active state navlinks on scroll
 
 const linkCurrentState = () => {
     const cur_pos = $(this).scrollTop();
@@ -87,7 +99,7 @@ const linkCurrentState = () => {
     });
 }
 
-//SCROLL PAGE
+//Scroll page on click
 $('.menuButtons').on('click', function (e) {
     const idName = $(this).attr('data-page');
     const x = window.innerWidth;
@@ -149,9 +161,10 @@ window.addEventListener('load', headerBackground);
 window.addEventListener('mouseup', closeNav);
 window.addEventListener('load', linkCurrentState);
 window.addEventListener('scroll', linkCurrentState);
-
+window.addEventListener('scroll', showHeaderName);
 
 
 loadProjects();
 navSlide();
+
 
