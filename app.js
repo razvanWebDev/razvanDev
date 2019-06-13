@@ -78,9 +78,17 @@ const showHeaderName = () => {
     if(width <= 768 && window.scrollY > y * 0.899) {
         $('#header-name').fadeIn();
         header.css({"background-color":"rgba(20, 20, 20, 0.85)"});
-    }else{
+    }else if (width <= 768 && window.scrollY < y * 0.899){
         $('#header-name').fadeOut();
         header.css({"background-color":"rgba(0, 0, 0, 0)"});
+    } else if  (width >= 768) {
+        if (window.scrollY > 20) {
+            header.addClass('yellow-header');
+            links.forEach((link) => link.classList.add('black-text'));
+        } else {
+            header.removeClass('yellow-header');
+            links.forEach((link) => link.classList.remove('black-text'));
+        }
     }
 }
 
@@ -158,8 +166,8 @@ const closeNav = (event) => {
 
 
 // Event listeners
-window.addEventListener('scroll', headerBackground);
-window.addEventListener('load', headerBackground);
+// window.addEventListener('scroll', headerBackground);
+// window.addEventListener('load', headerBackground);
 window.addEventListener('mouseup', closeNav);
 window.addEventListener('load', linkCurrentState);
 window.addEventListener('scroll', linkCurrentState);

@@ -46,7 +46,7 @@ header {
 }
 
 .yellow-header {
-    background-color: #FED900;
+    background-color: #FED900 !important;
     border-bottom: 3px solid #141414 !important;
 }
 
