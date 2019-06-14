@@ -71,7 +71,7 @@ const headerBackground = () => {
     }
 }
 
-//Show header name on max-width of 768px
+//Show header name & background depending on scroll and window width
 const showHeaderName = () => {
     const width  = window.innerWidth;
     const y = window.innerHeight;
@@ -113,7 +113,7 @@ const linkCurrentState = () => {
 $('.menuButtons').on('click', function (e) {
     const idName = $(this).attr('data-page');
     const x = window.innerWidth;
-    let headerHeight = $(window).height() * 0.1;
+    let headerHeight = $(window).height() * 0.099;
 
     $('html, body').animate({
         scrollTop: $("#" + idName + "-section").offset().top - headerHeight
@@ -166,12 +166,11 @@ const closeNav = (event) => {
 
 
 // Event listeners
-// window.addEventListener('scroll', headerBackground);
-// window.addEventListener('load', headerBackground);
 window.addEventListener('mouseup', closeNav);
 window.addEventListener('load', linkCurrentState);
 window.addEventListener('scroll', linkCurrentState);
 window.addEventListener('scroll', showHeaderName);
+window.addEventListener('load', showHeaderName);
 
 
 loadProjects();
