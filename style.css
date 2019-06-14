@@ -247,6 +247,10 @@ font-size: 12px;
     width: 150px;
 }
 
+.slack {
+    width: 58px;
+}
+
 /* PORTFOLIO-SECTION */
 
 #portfolio-section {
@@ -784,6 +788,11 @@ input {
     .saga {
         width: 70px;
     }
+    .slack {
+        width: 38px;
+    }
+    
+
     .other-skills-h3 {
         margin-bottom: 0px;
     }
