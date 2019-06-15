@@ -21,11 +21,14 @@ or access https://www.razvancrisan.ro/
 ## Setup
 ```
 git clone https://github.com/razvanWebDev/razvanWebDev.github.io.git
+cd razvanWebDev.github.io
+code .
 ```
 ```
 Open with Live Server 
+
 or
-cd razvanWebDev.github.io
+
 npm install
 npm i serve -g
 serve
