@@ -26,11 +26,4 @@ code .
 ```
 ```
 Open with Live Server 
-
-or
-
-npm install
-npm i serve -g
-serve
-open  http://localhost:5000 
 ```

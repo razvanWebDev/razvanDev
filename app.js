@@ -117,7 +117,7 @@ $('.menuButtons').on('click', function (e) {
 
     $('html, body').animate({
         scrollTop: $("#" + idName + "-section").offset().top - headerHeight
-    }, 'slow');
+    }, 1200);
 });
 
 const navSlide = () => {
