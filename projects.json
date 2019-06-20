@@ -40,7 +40,7 @@
         "skillsUsed": "Skills used: HTML, CSS, JavaScript, JQuery"
     },
     {
-        "name": "Phone Book App",
+        "name": "Phonebook App",
         "imgPath": "img/projects/PhoneBook.png",
         "codeLink": "https://github.com/razvanwebdev/node-agenda-app",
         "demoLink": "https://razvanwebdev.github.io/node-agenda-app/public/agenda.html", 
