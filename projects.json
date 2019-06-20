@@ -12,8 +12,8 @@
         "imgPath": "img/projects/fitness-app.png",
         "codeLink": "https://github.com/razvanwebdev/node-fitness-members-app",
         "demoLink": "https://razvanwebdev.github.io/node-fitness-members-app/public/index.html",
-        "description": "An app  designed to manage Gym Member subscriptions. Allows CRUD operationd and contains multiple member editable features like contract extension, adding or deleting gym sessions and member info. On demo version, the members are loaded from a JSON file, so not all CRUD are available in this case.",
-        "skillsUsed": "Skills used: HTML, CSS, JavaScript, Express NodeJS, JQuery, MySQL, JSON, Gravatar."
+        "description": "An app  designed to manage Gym Member subscriptions. Allows CRUD operationd and contains multiple member editable features like contract extension, adding or deleting gym sessions and editing member info.",
+        "skillsUsed": "Skills used: HTML, CSS, JavaScript, Express, NodeJS, JQuery, MySQL, phpMyAdmin, JSON, Gravatar."
     },
     {
         "name": "Beauty Studio Website",
