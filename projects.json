@@ -1,6 +1,6 @@
 [
     {
-        "name": "My First website",
+        "name": "Personal website - Version 1",
         "imgPath": "img/projects/CV-RazvanCrisan.png",
         "codeLink": "https://github.com/razvanWebDev/CV-razvanCrisan",
         "demoLink": "https://razvanwebdev.github.io/CV-razvanCrisan/",
@@ -31,14 +31,7 @@
         "description": "Classic Rock Paper Scissors game upgraded by Sheldon Cooper from tv series 'The Big Bang Theory', has a main page to play the game and rules page with the rules displayed and explained by Sheldon himself.", 
         "skillsUsed": "Skills used: HTML, CSS, JavaScript, JQuery, embeded Youtube video."
     },
-    {
-        "name": "Rock Paper Scissors",
-        "imgPath": "img/projects/rock-paper-scissors.png",
-        "codeLink": "https://github.com/razvanwebdev/rock-paper-scissors",
-        "demoLink": "https://razvanwebdev.github.io/rock-paper-scissors/", 
-        "description": "Classic Rock Paper Scissors game against the computer.", 
-        "skillsUsed": "Skills used: HTML, CSS, JavaScript, JQuery"
-    },
+ 
     {
         "name": "Phonebook App",
         "imgPath": "img/projects/PhoneBook.png",
