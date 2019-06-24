@@ -246,7 +246,11 @@ font-size: 12px;
 }
 
 .saga {
-    width: 150px;
+    width: 140px;
+}
+
+.node {
+    width: 110px;
 }
 
 .slack {
