@@ -39,13 +39,13 @@ function displayProjects(projects) {
         return `<div class="project-div">
                 <h3>${name} </h3>
                 <div class="img-container">
-                  <img src = ${image} alt="pic" class="project-pic">
+                  <img src = ${image} alt=${name} class="project-pic">
                   <div class="project-links">
-                            <a href="${codeLink}" target="_blank">
-                                  <button class="btn"> View Code</button>
+                            <a href="${codeLink}" target="_blank" rel="noopener" title="View Code">
+                                  <button class="btn">Code</button>
                             </a>
-                            <a href="${demoLink}" target="_blank">
-                                  <button class="btn">View Demo</button>
+                            <a href="${demoLink}" target="_blank" rel="noopener" title="View Demo">
+                                  <button class="btn">Demo</button>
                             </a>
                      </div>
                 </div>
