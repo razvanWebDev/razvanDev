@@ -223,8 +223,9 @@ font-size: 12px;
 .skills-types {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 4rem;
 }
 
 .skills-types div {
