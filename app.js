@@ -75,12 +75,12 @@ const headerBackground = () => {
 const showHeaderName = () => {
     const width  = window.innerWidth;
     const y = window.innerHeight;
-    if(width <= 768 && window.scrollY > y * 0.899) {
+    if(width <= 768 && window.scrollY > y * 0.9) {
         $('#header-name').fadeIn();
-        header.css({"background-color":"rgba(20, 20, 20, 0.85)"});
-    }else if (width <= 768 && window.scrollY < y * 0.899){
+        // header.css({"background-color":"rgba(20, 20, 20, 0.85)"});
+    }else if (width <= 768 && window.scrollY < y * 0.9){
         $('#header-name').fadeOut();
-        header.css({"background-color":"rgba(0, 0, 0, 0)"});
+        // header.css({"background-color":"rgba(0, 0, 0, 0)"});
     } else if  (width >= 768) {
         if (window.scrollY > 20) {
             header.addClass('yellow-header');

@@ -202,8 +202,9 @@ font-size: 12px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    min-height: 90vh;
 }
 
 #skills-section h2 {
@@ -693,7 +694,7 @@ input {
         overflow: hidden;
     }
     header {
-        background-color: none;
+        background-color: rgba(20, 20, 20, 0.85);
         border: none;
     }
     #header-links {
@@ -769,19 +770,15 @@ input {
     }
     /* skills-section */
     #skills-section {
+        padding: 1rem;
+        min-height: 50vh;
         background-color: #FED900;
     }
+
     .skills-types {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: stretch;
+        padding: 0;
     }
-    .skills-types div {
-        display: flex;
-    }
-    .skills-types div:last-of-type {
-        margin-top: 20px;
-    }
+   
     .skill-logo {
         width: 40px;
         filter: drop-shadow(0px 3px 1px #141414);
