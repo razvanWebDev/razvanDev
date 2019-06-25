@@ -300,14 +300,13 @@ font-size: 12px;
 
 .project-links {
     position: absolute;
-    bottom: 20px;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     opacity: 0;
-    width: 50%;
-    justify-content: space-between;
-    padding: 5px;
+    width: 100%;
+    justify-content: space-around;
     border-radius: 30px;
 }
 
@@ -316,7 +315,7 @@ font-size: 12px;
     border-radius: 15px;
     border: none;
     outline: none;
-    padding: 5px 20px;
+    padding: 5px 40px;
     font-weight: bold;
     cursor: pointer;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
