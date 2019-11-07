@@ -65,10 +65,6 @@ header ul li a {
     align-items: center;
 }
 
-.resume {
-    border-radius: 10px;
-}
-
 .black-border {
     border: 2px solid #141414;
 }
@@ -491,7 +487,7 @@ textarea {
     margin-bottom: 10px;
     width: 100%;
     border: none;
-    border-bottom: 1px solid #141414;
+    border-bottom: 1px solid #14141470;
     padding-left: 5px;
     color: #141414;
     transition: border-bottom 0.3s ease-in-out;
@@ -516,7 +512,7 @@ input {
     height: 25px;
     background-color: #fed900;
     border-radius: 30px;
-    border: 1px solid #141414;
+    border: 1px solid #14141430;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -546,7 +542,6 @@ input {
 
 .contact-details p a {
     color: #141414;
-    text-shadow: 1px 1px 1px rgba(254, 216, 0, 0.616);
 }
 
 .contact-social {
@@ -571,9 +566,8 @@ input {
     align-items: center;
 }
 
-#footer-section h1 {
+#footer-section p {
     color: #fed900;
-    font-size: 12px;
 }
 
 /* ANIMATIONS */

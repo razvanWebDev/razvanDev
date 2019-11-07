@@ -64,12 +64,9 @@ const headerBackground = () => {
         if (y > 20) {
             header.addClass("yellow-header");
             links.forEach(link => link.classList.add("black-text"));
-            resume.removeClass("yellow-border");
-            resume.addClass("black-border");
         } else {
             header.removeClass("yellow-header");
             links.forEach(link => link.classList.remove("black-text"));
-            resume.addClass("yellow-border");
         }
     }
 };
