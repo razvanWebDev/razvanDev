@@ -350,8 +350,8 @@ header ul li a {
 }
 
 #certificates-section a {
-  color: whitesmoke;
-  text-shadow: 1px 1px 2px #141414;
+  color: #402A00;
+  font-weight: bold;
 }
 
 /* EXPERIENCE-SECTION */
@@ -497,7 +497,7 @@ input {
   background-color: #fed900;
   border-radius: 30px;
   border: 1px solid #14141430;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
   cursor: pointer;
 }
 
@@ -525,7 +525,7 @@ input {
 }
 
 .contact-details p a {
-  color: #141414;
+  color: #402A00;
 }
 
 .contact-social {
