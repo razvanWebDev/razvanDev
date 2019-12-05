@@ -1,5 +1,13 @@
 [
   {
+    "name": "ARPIA website",
+    "imgPath": "img/projects/ARPIA_website.jpg",
+    "codeLink": "https://github.com/razvanWebDev/ARPIA_website",
+    "demoLink": "https://razvanwebdev.github.io/ARPIA_website/index.html",
+    "description": "Website built for A.R.P.I.A (Asociatia Romana pentru Propaganda si Istoria Aeronauticii) Cluj, contains info, events, photo & video galleries, ebooks, contact form and embedded credit card payments.",
+    "skillsUsed": "Skills used: HTML, CSS, Vanilla JavaScript, NodeJS, JSON, AJAX, PHP."
+  },
+  {
     "name": "Gym Member App",
     "imgPath": "img/projects/fitness-app.png",
     "codeLink": "https://github.com/razvanwebdev/node-fitness-members-app",
@@ -14,14 +22,6 @@
     "demoLink": "https://razvanwebdev.github.io/Typing-test/",
     "description": "Test your typing speed and at the end of the test, get a customized certificate with your name and results.",
     "skillsUsed": "Skills used: HTML, CSS, JavaScript."
-  },
-  {
-    "name": "ARPIA website",
-    "imgPath": "img/projects/ARPIA_website.jpg",
-    "codeLink": "https://github.com/razvanWebDev/ARPIA_website",
-    "demoLink": "https://razvanwebdev.github.io/ARPIA_website/index.html",
-    "description": "Website built for A.R.P.I.A (Asociatia Romana pentru Propaganda si Istoria Aeronauticii) Cluj, contains info, events, photo & video galleries, ebooks, contact form and embedded credit card payments.",
-    "skillsUsed": "Skills used: HTML, CSS, Vanilla JavaScript, NodeJS, JSON, AJAX."
   },
   {
     "name": "Personal website - Version 1",
