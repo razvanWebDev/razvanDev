@@ -4,7 +4,7 @@
     "imgPath": "img/projects/ARPIA_website.jpg",
     "codeLink": "https://github.com/razvanWebDev/ARPIA_website",
     "demoLink": "https://www.arpia-filialacluj.ro/",
-    "description": "Website built for A.R.P.I.A (Asociatia Romana pentru Propaganda si Istoria Aeronauticii) Cluj, contains info, events, photo & video galleries, ebooks, contact form and embedded credit card payments.",
+    "description": "Website built for A.R.P.I.A. (Romanian Association for Aeronautics History and Propaganda) in Cluj-Napoca, contains info, events, photo & video galleries, e-books, contact form and embedded credit card payments.",
     "skillsUsed": "Skills used: HTML, CSS, Vanilla JavaScript, NodeJS, JSON, AJAX, PHP."
   },
   {
