@@ -4,7 +4,7 @@
     "imgPath": "img/projects/ARPIA_website.jpg",
     "codeLink": "https://github.com/razvanWebDev/ARPIA_website",
     "demoLink": "https://www.arpia-filialacluj.ro/",
-    "description": "Website built for A.R.P.I.A. (Romanian Association for Aeronautics History and Propaganda) in Cluj-Napoca, contains info, events, photo & video galleries, e-books, contact form and embedded credit card payments.",
+    "description": "Responsive website built for A.R.P.I.A. (Romanian Association for Aeronautics History and Propaganda) in Cluj-Napoca, contains info, events, photo & video galleries, e-books, contact form and embedded credit card payments.",
     "skillsUsed": "Skills used: HTML, CSS, Vanilla JavaScript, NodeJS, JSON, AJAX, PHP."
   },
   {
@@ -36,7 +36,7 @@
     "imgPath": "img/projects/beauty-studio.png",
     "codeLink": "https://github.com/razvanwebdev/beauty-studio-barnsley",
     "demoLink": "https://razvanwebdev.github.io/beauty-studio-barnsley/",
-    "description": "Beauty studio website wich contains a welcome page, price listings, an offers page and contact.",
+    "description": "Responsive beauty studio website which contains a welcome page, price listings, an offers page and contact.",
     "skillsUsed": "Skills used: HTML, CSS, JavaScript, JQuery, PHP, embeded Google Maps."
   },
   {
