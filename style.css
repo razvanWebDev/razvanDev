@@ -47,7 +47,7 @@ header {
 
 .yellow-header {
   background-color: #fed900 !important;
-  border-bottom: 1px solid #141414 !important;
+  border-bottom: 1px solid rgba(20, 20, 20, 0.1) !important;
 }
 
 header ul {
@@ -324,9 +324,6 @@ header ul li a {
   padding: 5px 40px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .btn:hover {
