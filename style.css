@@ -40,7 +40,7 @@ header {
   align-items: center;
   height: 10vh;
   width: 100%;
-  padding-right: 3%;
+  padding:0 100px;
   border-bottom: 1px solid #fdde2b;
   z-index: 9;
   transition: all 0.3s ease-in-out;
@@ -58,13 +58,14 @@ header ul {
 }
 
 header ul li a {
-  padding: 0px 20px;
+  padding-left: 3em;
   color: #fdde2b;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
+
 
 .yellow-border {
   border: 1px solid #fdde2b;
@@ -169,11 +170,7 @@ header ul li a {
 .aboutMe {
   width: 50%;
   color: #fdde2b;
-  border: 1px solid #fdde2b;
-  border-radius: 10px;
-  padding: 10px;
   text-align: justify;
-  cursor: default;
   opacity: 0;
   animation: slide 1.5s ease;
   animation-delay: 0.5s;
@@ -208,7 +205,7 @@ header ul li a {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 90vh;
 }
@@ -232,7 +229,6 @@ header ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem;
 }
 
 .skills-types div {
@@ -343,6 +339,10 @@ header ul li a {
   text-align: center;
 }
 
+#certificates-section ul {
+  list-style-position: inside;
+}
+
 #certificates-section li {
   font-size: 20px;
 }
@@ -446,7 +446,7 @@ table tr:last-child td:last-child {
 /* CONTACT-SECTION */
 .contact-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -457,7 +457,7 @@ table tr:last-child td:last-child {
 }
 
 .contact-container form {
-  width: 30%;
+  width: 35%;
 }
 
 .contact-details {
@@ -491,8 +491,8 @@ table tr:last-child td:last-child {
 
 .moveUp{
   transform: translateY(0) !important;
-  font-size: 0.7em;
   line-height: 2.1em;
+  font-size: 0.7em;
   opacity: 0.7;
 }
 
