@@ -11,7 +11,7 @@ const navLinks = document.querySelectorAll(".menu-buttons");
 const resume = $(".resume");
 const links = document.querySelectorAll(".menuButtons");
 const sections = $("section");
-const contactInputs = document.querySelectorAll(".contact-form input");
+const labelTransform = document.querySelectorAll(".label-transform");
 
 //Load Projects from JSON
 function loadProjects() {
@@ -192,10 +192,10 @@ window.addEventListener("scroll", linkCurrentState);
 window.addEventListener("scroll", showHeaderName);
 window.addEventListener("load", showHeaderName);
 
-contactInputs.forEach(input =>
+labelTransform.forEach(input =>
   input.addEventListener("focus", () => moveUp(input))
 );
-contactInputs.forEach(input =>
+labelTransform.forEach(input =>
   input.addEventListener("focusout", () => moveDown(input))
 );
 

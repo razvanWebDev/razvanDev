@@ -470,6 +470,7 @@ table tr:last-child td:last-child {
   border: none;
   border-bottom: 1px solid #14141470;
   padding-left: 5px;
+  padding-bottom: 5px;
   color: #141414;
   transition: border-bottom 0.3s ease-in-out;
 }
@@ -478,10 +479,6 @@ table tr:last-child td:last-child {
 .contact-form input:focus {
   outline: none;
   border-bottom: 1px solid #fdde2b;
-}
-
-.contact-form input {
-  height: 25px;
 }
 
 .contact-form label {
@@ -496,26 +493,26 @@ table tr:last-child td:last-child {
   transform: translateY(0) !important;
   font-size: 0.7em;
   line-height: 2.1em;
+  opacity: 0.7;
 }
 
 #messageInput {
-  padding-top: 1em;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .contact-form button {
   width: 100%;
-  height: 25px;
+  height: 3em;
   background-color: #fdde2b;
-  border-radius: 30px;
-  border: 1px solid #14141430;
-  transition: all 0.3s;
+  border: none;
+  border-bottom: 2px solid #fdde2b;
+  font-size: 0.9em;
+  transition: all 0.1s;
   cursor: pointer;
 }
 
 .contact-form button:hover {
-  color: #fdde2b;
-  background-color: #141414;
+  border-bottom: 2px solid #141414;
 }
 
 
