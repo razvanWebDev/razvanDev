@@ -61,7 +61,7 @@ function displayProjects(projects) {
 const showHeaderName = () => {
   const width = window.innerWidth;
   if (width <= 768) {
-    headerName.style.color = "#fdde2b";
+    headerName.style.color = "#fdde2be6";
     if (window.scrollY < 30) {
       headerName.style.display = "none";
     } else {
