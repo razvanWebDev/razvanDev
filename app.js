@@ -57,36 +57,33 @@ function displayProjects(projects) {
   resultList.innerHTML = listItems.join("");
 }
 
-// Change header background on scroll
-const headerBackground = () => {
-  const y = window.scrollY;
-  const x = window.innerWidth;
-  if (x >= 768) {
-    if (y > 20) {
+// Show header name & background depending on scroll and window width
+const showHeaderName = () => {
+  const width = window.innerWidth;
+  if (width <= 768) {
+    headerName.style.color = "#fdde2b";
+    if (window.scrollY < 30) {
+      headerName.style.display = "none";
+    } else {
+      headerName.style.display = "block";
+    }
+  } else if (width > 768 && width <= 1024) {
+    headerName.style.display = "none";
+    if (window.scrollY > 100) {
       header.addClass("yellow-header");
       links.forEach(link => link.classList.add("black-text"));
     } else {
       header.removeClass("yellow-header");
       links.forEach(link => link.classList.remove("black-text"));
     }
-  }
-};
-
-//Show header name & background depending on scroll and window width
-const showHeaderName = () => {
-  const width = window.innerWidth;
-  const y = window.innerHeight;
-  if (width <= 768 && window.scrollY > y * 0.9) {
-    $("#header-name").fadeIn();
-    // header.css({"background-color":"rgba(20, 20, 20, 0.85)"});
-  } else if (width <= 768 && window.scrollY < y * 0.9) {
-    $("#header-name").fadeOut();
-    // header.css({"background-color":"rgba(0, 0, 0, 0)"});
-  } else if (width >= 768) {
-    if (window.scrollY > 20) {
+  } else {
+    headerName.style.display = "block";
+    if (window.scrollY > 100) {
+    headerName.style.opacity = "1";
       header.addClass("yellow-header");
       links.forEach(link => link.classList.add("black-text"));
     } else {
+        headerName.style.opacity = "0";
       header.removeClass("yellow-header");
       links.forEach(link => link.classList.remove("black-text"));
     }
@@ -94,10 +91,8 @@ const showHeaderName = () => {
 };
 
 //Change active state navlinks on scroll
-
 const linkCurrentState = () => {
   const cur_pos = $(this).scrollTop();
-
   sections.each(function() {
     const top = $(this).offset().top - nav_height - 200;
     const bottom = top + $(this).outerHeight();
@@ -181,9 +176,9 @@ const moveUp = input => {
 const moveDown = input => {
   const labelName = input.getAttribute("name");
   const currenLAbel = document.querySelector(`.label-${labelName}`);
-  if(input.value == "") {
-    currenLAbel.classList.remove("moveUp")
-  };
+  if (input.value == "") {
+    currenLAbel.classList.remove("moveUp");
+  }
 };
 // Event listeners
 window.addEventListener("mouseup", closeNav);
