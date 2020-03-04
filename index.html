@@ -45,8 +45,8 @@
             </li>
         </ul>
         <div id="header-name">
-            <h1>Razvan Crisan</h1>
-            <h2>Web Developer</h2>
+            <h1>Web Developer</h1>
+            <h2>Razvan Crisan</h2>
         </div>
 
 
@@ -60,8 +60,8 @@
         <div class="profile">
             <img src="img/CV-foto.jpg" alt="My Foto">
             <div class="motto">
-                <h1>Razvan Crisan</h1>
-                <h2>Web Developer</h2>
+                <h1>Web Developer</h1>
+                <h2>Razvan Crisan</h2>
             </div>
         </div>
 
@@ -165,13 +165,16 @@
     <section id="contact-section">
         <h2>CONTACT</h2>
         <div class="contact-container">
-            <form name="web-contact-form" netlify>
+            <form class="contact-form" name="web-contact-form" netlify>
                 <h3>Contact me</h3>
-                <input type="text" name="name" placeholder="name"><br>
-                <input type="email" name="mail" placeholder="email"><br>
-                <input type="text" name="phone" placeholder="phone"><br>
-                <textarea id="messageInput" name="message" rows="5" placeholder="message"></textarea>
-                <br>
+                <label for="name" class="label-name">Name</label>
+                <input type="text" name="name">
+                <label for="email" class="label-mail">Email</label>
+                <input type="email" name="mail">
+                <label for="phone" class="label-phone">Phone</label>
+                <input type="text" name="phone">
+                <textarea id="messageInput" name="message" rows="8" placeholder="message"></textarea>
+              
                 <button>Send</button>
             </form>
             <div class="contact-details">
