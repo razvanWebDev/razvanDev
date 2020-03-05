@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 }
 
 body {
-  font-family: "Noto Sans HK", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: rgb(53, 53, 53);
 }
 
@@ -265,20 +266,27 @@ header ul li a {
 .projects {
   max-width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 120px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3em;
+  font-size: 0.9em;
 }
 
 .project-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+  background-color: #202020;
+  padding: 3.5em;
 }
 
 .project-div h3 {
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
 .img-container {
   position: relative;
+  margin-bottom: 2em;
 }
 
 .project-pic {
@@ -310,10 +318,10 @@ header ul li a {
 
 .btn {
   background-color: #fdde2be6;
-  border-radius: 15px;
+  border-radius: 3px;
   border: none;
   outline: none;
-  padding: 5px 40px;
+  padding: 3px 18px;
   font-weight: bold;
   cursor: pointer;
 }

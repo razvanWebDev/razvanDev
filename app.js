@@ -52,7 +52,7 @@ function displayProjects(projects) {
                 </div>
                 <p>${description}</p>
                 <p>${skillsUsed}</p>
-              </div>`;
+            </div>`;
   });
   resultList.innerHTML = listItems.join("");
 }
