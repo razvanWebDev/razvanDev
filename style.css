@@ -203,25 +203,11 @@ header ul li a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 90vh;
-}
-
-#skills-section h2 {
-  margin-bottom: 20px;
-}
-
-#skills-section h3 {
-  width: 100%;
-  text-align: center;
-  margin: 40px 0 20px;
-}
-
-#skills-section h3:first-of-type {
-  margin-top: 20px;
-}
+} 
 
 .skills-types {
   width: 100%;
+  padding: 3em 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -669,27 +655,25 @@ table tr:last-child td:last-child {
 }
 
 @media only screen and (max-width: 1024px) {
-  section {
-    padding: 60px;
-  }
-  section h2 {
-    font-size: 22px;
-  }
-  section h3 {
-    font-size: 18px;
-  }
   /* home-section */
+  header ul li a {
+    margin-left: 0;
+    
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
   .aboutMe {
-    width: 75%;
+    width: 60%;
   }
 
   /* projects-section */
   .projects {
-    grid-gap: 50px;
-  }
-  /* certificates-section */
-  #certificates-section li {
-    font-size: 18px;
+    grid-template-columns: 1fr 1fr;
   }
   /* languages-page */
   #languages-section table {
