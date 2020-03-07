@@ -86,6 +86,7 @@ header {
   font-size: 1.3em;
   line-height: 1;
   letter-spacing: 2px;
+  color: whitesmoke;
 }
 
 #header-name h2 {
@@ -140,7 +141,7 @@ header {
 }
 
 .aboutMe {
-  width: 50%;
+  width: 55%;
   color: #fdde2be6;
   text-align: justify;
   padding-left: 4em;
@@ -171,7 +172,7 @@ header {
 }
 
 .aboutMe p {
-  margin-bottom:1em;
+  margin-bottom: 1em;
   line-height: 1.5;
 }
 
@@ -685,6 +686,9 @@ table tr:last-child td:last-child {
   .aboutMe {
     width: 60%;
   }
+  .social {
+    bottom: 5vh;
+  }
   /* projects-section */
   .projects {
     grid-template-columns: 1fr 1fr;
@@ -709,6 +713,7 @@ table tr:last-child td:last-child {
   }
   header {
     background-color: rgba(20, 20, 20, 0.85);
+    height: 10vh;
     border: none;
   }
   #header-links {
@@ -744,6 +749,15 @@ table tr:last-child td:last-child {
     animation: navSlideOut 0.5s ease both;
   }
 
+  /* landing page */
+  .aboutMe {
+    padding-left: 3em;
+    width: 100%;
+  }
+
+  .aboutMe p {
+    line-height: 1.1;
+  }
   /* projects-section */
   .projects {
     grid-template-columns: 1fr;
@@ -779,23 +793,43 @@ table tr:last-child td:last-child {
 
   /* landing page */
   #home-section {
-    padding: 20vh 40px 5vh;
+    flex-direction: column;
+    padding: 10vh 40px;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .profile {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .profile img {
-    width: 30%;
-  }
-
-  .motto h1 {
-    font-size: 1.5em;
-  }
-
-  .motto h2 {
-    font-size: 1em;
+    width: 10em;
+    height: 10em;
+    margin-bottom: 30px;
   }
 
   .aboutMe {
     width: 100%;
+    text-align: center;
+    padding: 0;
   }
+
+  .aboutMe h1 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+  }
+
+  .aboutMe h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .portfolio-btn {
+    margin: 0 0 20px
+  }
+
   /* skills page */
   .skills-types:first-of-type {
     margin-bottom: 3.5em;
