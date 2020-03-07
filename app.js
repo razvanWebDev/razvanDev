@@ -50,8 +50,7 @@ function displayProjects(projects) {
                             </a>
                      </div>
                 </div>
-                <p>${description}</p>
-                <p>${skillsUsed}</p>
+                <p>${description}<br><br><span class="white-text">Skills used: </span>${skillsUsed}</p>
             </div>`;
   });
   resultList.innerHTML = listItems.join("");

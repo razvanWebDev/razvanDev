@@ -5,7 +5,7 @@
     "codeLink": "https://github.com/razvanWebDev/ARPIA_website",
     "demoLink": "https://www.arpia-filialacluj.ro/",
     "description": "Responsive website built for A.R.P.I.A. (Romanian Association for Aeronautics History and Propaganda) in Cluj-Napoca, contains info, events, photo & video galleries, e-books, contact form and embedded credit card payments.",
-    "skillsUsed": "Skills used: HTML, CSS, Vanilla JavaScript, NodeJS, JSON, AJAX, PHP."
+    "skillsUsed": "HTML, CSS, Vanilla JavaScript, NodeJS, JSON, AJAX, PHP."
   },
   {
     "name": "Gym Member App",
@@ -13,7 +13,7 @@
     "codeLink": "https://github.com/razvanwebdev/node-fitness-members-app",
     "demoLink": "https://razvanwebdev.github.io/node-fitness-members-app/public/index.html",
     "description": "An app  designed to manage Gym Member subscriptions. Allows CRUD operationd and contains multiple member editable features like contract extension, adding or deleting gym sessions and editing member info.",
-    "skillsUsed": "Skills used: HTML, CSS, JavaScript, Express, NodeJS, JQuery, MySQL, phpMyAdmin, JSON, Gravatar."
+    "skillsUsed": "HTML, CSS, JavaScript, Express, NodeJS, JQuery, MySQL, phpMyAdmin, JSON, Gravatar."
   },
   {
     "name": "Typing Test",
@@ -21,7 +21,7 @@
     "codeLink": "https://github.com/razvanWebDev/Typing-test",
     "demoLink": "https://razvanwebdev.github.io/Typing-test/",
     "description": "Test your typing speed and at the end of the test, get a customized certificate with your name and results.",
-    "skillsUsed": "Skills used: HTML, CSS, JavaScript."
+    "skillsUsed": "HTML, CSS, JavaScript."
   },
   {
     "name": "Personal website - Version 1",
@@ -29,7 +29,7 @@
     "codeLink": "https://github.com/razvanWebDev/CV-razvanCrisan",
     "demoLink": "https://razvanwebdev.github.io/CV-razvanCrisan/",
     "description": "My first personal website  which I created while learning to code",
-    "skillsUsed": "Skills used: HTML, CSS, JavaScript, NodeJS, JQuery, AJAX, MySQL, JSON."
+    "skillsUsed": "HTML, CSS, JavaScript, NodeJS, JQuery, AJAX, MySQL, JSON."
   },
   {
     "name": "Beauty Studio Website",
@@ -37,7 +37,7 @@
     "codeLink": "https://github.com/razvanwebdev/beauty-studio-barnsley",
     "demoLink": "https://razvanwebdev.github.io/beauty-studio-barnsley/",
     "description": "Responsive beauty studio website which contains a welcome page, price listings, an offers page and contact.",
-    "skillsUsed": "Skills used: HTML, CSS, JavaScript, JQuery, PHP, embeded Google Maps."
+    "skillsUsed": "HTML, CSS, JavaScript, JQuery, PHP, embeded Google Maps."
   },
   {
     "name": "Rock Paper Scissors Lizzard Spock",
@@ -45,7 +45,7 @@
     "codeLink": "https://github.com/razvanwebdev/rock-paper-scissors-lizard-spock",
     "demoLink": "https://razvanwebdev.github.io/rock-paper-scissors-lizard-spock/index.html",
     "description": "Classic Rock Paper Scissors game upgraded by Sheldon Cooper from tv series 'The Big Bang Theory', has a main page to play the game and rules page with the rules displayed and explained by Sheldon himself.",
-    "skillsUsed": "Skills used: HTML, CSS, JavaScript, JQuery, embeded Youtube video."
+    "skillsUsed": "HTML, CSS, JavaScript, JQuery, embeded Youtube video."
   },
   {
     "name": "Phonebook App",
@@ -53,7 +53,7 @@
     "codeLink": "https://github.com/razvanwebdev/node-agenda-app",
     "demoLink": "https://razvanwebdev.github.io/node-agenda-app/public/agenda.html",
     "description": "My first nodeJS app containig CRUD oparations.",
-    "skillsUsed": "Skills used: HTML, CSS, JavaScript, Express NodeJS, JQuery, JSON."
+    "skillsUsed": "HTML, CSS, JavaScript, Express NodeJS, JQuery, JSON."
   },
   {
     "name": "Calculator",
@@ -61,6 +61,6 @@
     "codeLink": "https://github.com/razvanWebDev/Simple-Calculator",
     "demoLink": "https://razvanwebdev.github.io/Simple-Calculator/Index.html",
     "description": "Simple calculator.",
-    "skillsUsed": "Skills used: HTML, CSS, JavaScript"
+    "skillsUsed": "HTML, CSS, JavaScript"
   }
 ]

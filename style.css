@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto:300,400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +31,14 @@ a {
 
 a:hover {
   opacity: 0.75;
+}
+
+.black-text {
+  color: #141414;
+}
+
+.white-text {
+  color: whitesmoke;
 }
 
 /* HEADER */
@@ -66,23 +75,20 @@ header ul li a {
   align-items: center;
 }
 
-.black-text {
-  color: #141414;
-}
 
 .current {
-  text-decoration: underline;
-  text-underline-position: under;
+  color: whitesmoke;
 }
 
 #header-name {
   cursor: default;
   text-align: right;
   color: #141414;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #header-name h1 {
-  font-size: 1em;
+  font-size: 1.3em;
   line-height: 1;
   letter-spacing: 2px;
 }
@@ -145,7 +151,7 @@ header ul li a {
   align-items: flex-end;
   color: #fdde2be6;
   border-left: 1px solid #fdde2be6;
-  padding-left: 20px;
+  padding: 20px 0 20px 20px;
   margin-left: 20px;
   cursor: default;
 }
@@ -153,12 +159,14 @@ header ul li a {
 .motto h1 {
   font-size: 2em;
   line-height: 1;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .motto h2 {
   font-size: 1.2em;
   text-align: right;
   margin-bottom: 0px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .aboutMe {
@@ -243,12 +251,15 @@ header ul li a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center;
+  text-align: justify;
   background-color: #202020;
   padding: 3.5em;
+  font-weight:300;
 }
 
 .project-div h3 {
+  display: block;
+  text-align: center;
   margin-bottom: 1em;
   color: whitesmoke;
 }
@@ -737,5 +748,9 @@ table tr:last-child td:last-child {
 
   .aboutMe {
     width: 100%;
+  }
+  /* skills page */
+  .skills-types:first-of-type {
+    margin-bottom: 3.5em;
   }
 }
