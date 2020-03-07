@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto:300,400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto:300,400&display=swap");
 
 * {
   margin: 0;
@@ -75,7 +75,6 @@ header ul li a {
   align-items: center;
 }
 
-
 .current {
   color: whitesmoke;
 }
@@ -84,7 +83,7 @@ header ul li a {
   cursor: default;
   text-align: right;
   color: #141414;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 #header-name h1 {
@@ -159,14 +158,14 @@ header ul li a {
 .motto h1 {
   font-size: 2em;
   line-height: 1;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .motto h2 {
   font-size: 1.2em;
   text-align: right;
   margin-bottom: 0px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .aboutMe {
@@ -254,7 +253,7 @@ header ul li a {
   text-align: justify;
   background-color: #202020;
   padding: 3.5em;
-  font-weight:300;
+  font-weight: 300;
 }
 
 .project-div h3 {
@@ -324,10 +323,12 @@ header ul li a {
 
 #certificates-section ul {
   list-style-position: inside;
+  text-align: justify;
 }
 
 #certificates-section li {
   font-size: 1.1em;
+  padding-bottom: 1em;
 }
 
 #certificates-section a {
@@ -766,6 +767,14 @@ table tr:last-child td:last-child {
     grid-gap: 40px;
   }
   .project-div {
-    padding: 30px
+    padding: 30px;
+  }
+  /* certificates page */
+  #certificates-section li {
+    font-size: 1em;
+  }
+  /* contact form */
+  .contact-container form {
+    width: 100%;
   }
 }
