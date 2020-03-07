@@ -13,7 +13,7 @@ body {
 }
 
 section {
-  padding: 100px;
+  padding: 8vw;
 }
 
 section h2 {
@@ -30,7 +30,7 @@ a {
 }
 
 .black-text {
-  color: #141414;
+  color: #141414 !important;
 }
 
 .white-text {
@@ -38,31 +38,31 @@ a {
 }
 
 /* HEADER */
-
 header {
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
   width: 100%;
-  padding: 0 100px;
+  padding: 0 8vw;
   z-index: 9;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in;
 }
 
 .yellow-header {
-  background-color: #fdde2be6 !important;
+  background-color: rgba(253, 222, 43, 0.98) !important;
   box-shadow: 0px 0px 10px 1px rgba(20, 20, 20, 0.8);
 }
 
-header ul {
+#header-links {
   display: flex;
   align-items: center;
   list-style-type: none;
+  padding: 2.5em 0;
+  transition: padding 0.5s ease-in-out;
 }
 
-header ul li a {
+#header-links li a {
   margin-left: 3em;
   color: #fdde2be6;
   display: flex;
@@ -72,7 +72,7 @@ header ul li a {
 }
 
 .current {
-  color: whitesmoke;
+  text-decoration: underline;
 }
 
 #header-name {
@@ -103,7 +103,7 @@ header ul li a {
 .burger div {
   width: 20px;
   height: 3px;
-  background-color: #fdde2be6;
+  background-color: rgba(253, 222, 43, 0.98);
   margin: 3px;
   transition: all 0.5s ease;
 }
@@ -133,16 +133,17 @@ header ul li a {
 }
 
 .profile img {
-  width: 13em;
+  width: 14em;
   border-radius: 50%;
-  border: 10px solid rgba(255,255,255,.1)
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 16px;
 }
 
 .aboutMe {
   width: 50%;
   color: #fdde2be6;
   text-align: justify;
-  padding: 0 3em;
+  padding-left: 4em;
   opacity: 0;
   animation: slide 1.5s ease;
   animation-delay: 0.5s;
@@ -153,15 +154,15 @@ header ul li a {
   font-size: 1.4em;
   font-weight: normal;
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 0.8em;
   font-family: "Josefin Sans", sans-serif;
 }
 
 .aboutMe h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1;
   font-family: "Josefin Sans", sans-serif;
-  margin-bottom: 12px;
+  margin-bottom: 0.2em;
   color: whitesmoke;
 }
 
@@ -170,13 +171,13 @@ header ul li a {
 }
 
 .aboutMe p {
-  margin-bottom: 15px;
+  margin-bottom:1em;
+  line-height: 1.5;
 }
 
-
 .aboutMe button {
-  padding:0.9em 2em;
-  border: none;
+  padding: 0.9em 2em;
+  border: 1px solid #fdde2be6;
   font-weight: bold;
   cursor: pointer;
   outline: none;
@@ -186,11 +187,16 @@ header ul li a {
 .portfolio-btn {
   background-color: #fdde2be6;
   margin-right: 2em;
+  margin-bottom: 16px;
 }
 
 .download-cv-button {
   background-color: transparent;
-  border: 1px solid #fdde2be6 !important;
+  color: #fdde2be6;
+}
+
+.portfolio-btn:hover {
+  background-color: transparent;
   color: #fdde2be6;
 }
 
@@ -201,12 +207,12 @@ header ul li a {
 
 .social {
   position: absolute;
-  bottom: 5vh;
+  bottom: 2vh;
 }
 
 .social img {
   position: relative;
-  width: 40px;
+  width: 2.5em;
   margin: 0 20px;
   transition: all 0.2s ease-in-out;
   opacity: 0;
@@ -320,6 +326,7 @@ header ul li a {
 .btn {
   background-color: #fdde2be6;
   border-radius: 3px;
+  font-size: 0.9em;
   border: none;
   outline: none;
   padding: 3px 18px;
@@ -638,6 +645,15 @@ table tr:last-child td:last-child {
   to {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

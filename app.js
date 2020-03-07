@@ -13,49 +13,6 @@ const links = document.querySelectorAll(".menuButtons");
 const sections = $("section");
 const labelTransform = document.querySelectorAll(".label-transform");
 
-//Load Projects from JSON
-function loadProjects() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      const projects = JSON.parse(xhttp.responseText);
-      displayProjects(projects);
-    }
-  };
-  xhttp.open("GET", "projects.json", true);
-  xhttp.send();
-}
-
-//DISPLAY PROJECTS
-function displayProjects(projects) {
-  const resultList = document.querySelector(".projects");
-  const listItems = projects.map(function(project) {
-    const name = project.name;
-    const image = project.imgPath;
-    const codeLink = project.codeLink;
-    const demoLink = project.demoLink;
-    const description = project.description;
-    const skillsUsed = project.skillsUsed;
-
-    return `<div class="project-div">
-                <h3>${name} </h3>
-                <div class="img-container">
-                  <img src = ${image} alt=${name} class="project-pic">
-                  <div class="project-links">
-                            <a href="${codeLink}" target="_blank" rel="noopener" title="View Code">
-                                  <button class="btn">Code</button>
-                            </a>
-                            <a href="${demoLink}" target="_blank" rel="noopener" title="View Demo">
-                                  <button class="btn">Demo</button>
-                            </a>
-                     </div>
-                </div>
-                <p>${description}<br><br><span class="white-text">Skills used: </span>${skillsUsed}</p>
-            </div>`;
-  });
-  resultList.innerHTML = listItems.join("");
-}
-
 // Show header name & background depending on scroll and window width
 const showHeaderName = () => {
   const width = window.innerWidth;
@@ -80,14 +37,17 @@ const showHeaderName = () => {
     if (window.scrollY > 100) {
     headerName.style.opacity = "1";
       header.addClass("yellow-header");
+      nav.style.padding = "0.8em 0";
       links.forEach(link => link.classList.add("black-text"));
     } else {
         headerName.style.opacity = "0";
       header.removeClass("yellow-header");
+      nav.style.padding = "2.5em 0";
       links.forEach(link => link.classList.remove("black-text"));
     }
   }
 };
+
 
 //Change active state navlinks on scroll
 const linkCurrentState = () => {
@@ -108,7 +68,7 @@ const linkCurrentState = () => {
 $(".menuButtons").on("click", function(e) {
   const idName = $(this).attr("data-page");
   const x = window.innerWidth;
-  let headerHeight = $(window).height() * 0.099;
+  let headerHeight = $(window).height() * 0.062;
 
   $("html, body").animate(
     {
@@ -166,6 +126,50 @@ const closeNav = event => {
   }
 };
 
+//Load Projects from JSON
+function loadProjects() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      const projects = JSON.parse(xhttp.responseText);
+      displayProjects(projects);
+    }
+  };
+  xhttp.open("GET", "projects.json", true);
+  xhttp.send();
+}
+
+//DISPLAY PROJECTS
+function displayProjects(projects) {
+  const resultList = document.querySelector(".projects");
+  const listItems = projects.map(function(project) {
+    const name = project.name;
+    const image = project.imgPath;
+    const codeLink = project.codeLink;
+    const demoLink = project.demoLink;
+    const description = project.description;
+    const skillsUsed = project.skillsUsed;
+
+    return `<div class="project-div">
+                <h3>${name} </h3>
+                <div class="img-container">
+                  <img src = ${image} alt=${name} class="project-pic">
+                  <div class="project-links">
+                            <a href="${codeLink}" target="_blank" rel="noopener" title="View Code">
+                                  <button class="btn">Code</button>
+                            </a>
+                            <a href="${demoLink}" target="_blank" rel="noopener" title="View Demo">
+                                  <button class="btn">Demo</button>
+                            </a>
+                     </div>
+                </div>
+                <p>${description}<br><br><span class="white-text">Skills used: </span>${skillsUsed}</p>
+            </div>`;
+  });
+  resultList.innerHTML = listItems.join("");
+}
+
+// Form labels animations
 const moveUp = input => {
   const labelName = input.getAttribute("name");
   const currenLAbel = document.querySelector(`.label-${labelName}`);
