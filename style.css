@@ -29,10 +29,6 @@ a {
   transition: all 0.1s;
 }
 
-a:hover {
-  opacity: 0.75;
-}
-
 .black-text {
   color: #141414;
 }
@@ -115,15 +111,13 @@ header ul li a {
 /* LANDING PAGE */
 #home-section {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   position: relative;
   height: 100vh;
-  padding: 20vh 0 5vh;
+  padding-bottom: 20vh;
   background-image: linear-gradient(
-      rgba(8, 8, 8, 0.9) 0%,
-      rgba(8, 8, 8, 0.9) 100%
+      rgba(8, 8, 8, 0.93) 0%,
+      rgba(8, 8, 8, 0.93) 100%
     ),
     url(img/header-background.jpg);
   background-repeat: no-repeat;
@@ -139,47 +133,75 @@ header ul li a {
 }
 
 .profile img {
-  width: 12%;
+  width: 13em;
   border-radius: 50%;
-}
-
-.motto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  color: #fdde2be6;
-  border-left: 1px solid #fdde2be6;
-  padding: 20px 0 20px 20px;
-  margin-left: 20px;
-  cursor: default;
-}
-
-.motto h1 {
-  font-size: 2em;
-  line-height: 1;
-  font-family: "Josefin Sans", sans-serif;
-}
-
-.motto h2 {
-  font-size: 1.2em;
-  text-align: right;
-  margin-bottom: 0px;
-  font-family: "Josefin Sans", sans-serif;
+  border: 10px solid rgba(255,255,255,.1)
 }
 
 .aboutMe {
   width: 50%;
   color: #fdde2be6;
   text-align: justify;
+  padding: 0 3em;
   opacity: 0;
   animation: slide 1.5s ease;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
 
-.aboutMe a {
+.aboutMe h2 {
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 15px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.aboutMe h1 {
+  font-size: 3em;
+  line-height: 1;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 12px;
   color: whitesmoke;
+}
+
+.aboutMe p a {
+  color: whitesmoke;
+}
+
+.aboutMe p {
+  margin-bottom: 15px;
+}
+
+
+.aboutMe button {
+  padding:0.9em 2em;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.portfolio-btn {
+  background-color: #fdde2be6;
+  margin-right: 2em;
+}
+
+.download-cv-button {
+  background-color: transparent;
+  border: 1px solid #fdde2be6 !important;
+  color: #fdde2be6;
+}
+
+.download-cv-button:hover {
+  background-color: #fdde2be6;
+  color: #141414;
+}
+
+.social {
+  position: absolute;
+  bottom: 5vh;
 }
 
 .social img {
@@ -476,7 +498,7 @@ table tr:last-child td:last-child {
   border: none;
   border-bottom: 2px solid #fdde2be6;
   font-size: 0.9em;
-  transition: all 0.1s;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
