@@ -207,10 +207,6 @@ header {
   color: var(--primary-color);
 }
 
-.social {
-  /* position: absolute;
-  bottom: 2vh; */
-}
 
 .social img {
   position: relative;
@@ -548,11 +544,17 @@ text-shadow: 1px 1px 3px rgba(20, 20, 20, 0.8);
   text-align: center;
 }
 
-.contact-details p img {
+.contact-details p {
+  line-height: 2.5;
+}
+
+.contact-details p svg {
   height: 24px;
-  margin-right: 20px;
+  margin-right: 15px;
+  color: var(--secondary-color);
   transform: translateY(28%);
 }
+
 
 .contact-details p a {
   color: whitesmoke;
