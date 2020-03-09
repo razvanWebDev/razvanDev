@@ -116,10 +116,11 @@ header {
 /* LANDING PAGE */
 #home-section {
   display: flex;
-  justify-content: center;
-  position: relative;
-  height: 100vh;
-  padding-bottom: 20vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30vh 8vw 5vh;
   background-image: linear-gradient(
       rgba(8, 8, 8, 0.93) 0%,
       rgba(8, 8, 8, 0.93) 100%
@@ -134,6 +135,7 @@ header {
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5em;
   animation: drop 2s ease;
 }
 
@@ -206,8 +208,8 @@ header {
 }
 
 .social {
-  position: absolute;
-  bottom: 2vh;
+  /* position: absolute;
+  bottom: 2vh; */
 }
 
 .social img {
@@ -345,8 +347,8 @@ header {
 /* CERTIFICATES-SECTION */
 #certificates-section {
   background-image: linear-gradient(
-      rgba(8, 8, 8, 0.6) 0%,
-      rgba(8, 8, 8, 0.3) 100%
+      rgba(8, 8, 8, 0.5) 0%,
+      rgba(8, 8, 8, 0.7) 100%
     ),
     url(img/business-computer-contemporary-desk-218863.jpg);
   background-repeat: no-repeat;
@@ -569,8 +571,7 @@ text-shadow: 1px 1px 3px rgba(20, 20, 20, 0.8);
 
 /* FOOTER-SECTION */
 #footer-section {
-  height: 15vh;
-  padding: 0;
+  padding: 3em;
   width: 100%;
   background-color: var(--secondary-color);
   display: flex;
@@ -821,13 +822,11 @@ text-shadow: 1px 1px 3px rgba(20, 20, 20, 0.8);
   /* landing page */
   #home-section {
     flex-direction: column;
-    padding: 10vh 40px;
+    padding-top:10vh;
     justify-content: center;
     align-items: center;
-
   }
   .profile {
-    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -839,7 +838,6 @@ text-shadow: 1px 1px 3px rgba(20, 20, 20, 0.8);
   }
 
   .aboutMe {
-    width: 100%;
     text-align: center;
     padding: 0;
   }
@@ -863,14 +861,14 @@ text-shadow: 1px 1px 3px rgba(20, 20, 20, 0.8);
   }
   /* projects page */
   .projects {
-    grid-gap: 40px;
+    grid-gap: 30px;
   }
   .project-div {
     padding: 30px;
   }
   /* certificates page */
   #certificates-section li {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   /* contact form */
   .contact-container form {
