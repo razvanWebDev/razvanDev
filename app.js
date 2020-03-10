@@ -35,19 +35,18 @@ const showHeaderName = () => {
   } else {
     headerName.style.display = "block";
     if (window.scrollY > 100) {
-    headerName.style.opacity = "1";
+      headerName.style.opacity = "1";
       header.addClass("yellow-header");
       nav.style.padding = "0.8em 0";
       links.forEach(link => link.classList.add("black-text"));
     } else {
-        headerName.style.opacity = "0";
+      headerName.style.opacity = "0";
       header.removeClass("yellow-header");
       nav.style.padding = "2.5em 0";
       links.forEach(link => link.classList.remove("black-text"));
     }
   }
 };
-
 
 //Change active state navlinks on scroll
 const linkCurrentState = () => {
@@ -151,19 +150,21 @@ function displayProjects(projects) {
     const skillsUsed = project.skillsUsed;
 
     return `<div class="project-div">
-                <h3>${name} </h3>
-                <div class="img-container">
-                  <img src = ${image} alt=${name} class="project-pic">
-                  <div class="project-links">
-                            <a href="${codeLink}" target="_blank" rel="noopener" title="View Code">
-                                  <button class="btn">Code</button>
-                            </a>
-                            <a href="${demoLink}" target="_blank" rel="noopener" title="View Demo">
-                                  <button class="btn">Demo</button>
-                            </a>
-                     </div>
+              <div class="img-container">
+                <img src = ${image} alt=${name} class="project-pic">
+                <div class="project-links">
+                  <a href="${codeLink}" target="_blank" rel="noopener" title="View Code">
+                    <button class="btn">Code</button>
+                  </a>
+                  <a href="${demoLink}" target="_blank" rel="noopener" title="View Demo">
+                    <button class="btn">Demo</button>
+                 </a>
                 </div>
+              </div>
+              <div class="project-description">
+                <h3>${name} </h3>
                 <p>${description}<br><br><span class="white-text">Skills used: </span>${skillsUsed}</p>
+              </div>  
             </div>`;
   });
   resultList.innerHTML = listItems.join("");
