@@ -17,7 +17,7 @@ body {
 }
 
 section {
-  padding: 6em 10vw;
+  padding: 7em 10vw;
 }
 
 section h2 {
@@ -68,15 +68,13 @@ header {
 }
 
 #header-links li a {
-  margin-left: 1.5em;
-  padding: 0.5em 1em;
+  padding: 0.5em 2em;
   color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   border-radius: 5px;
- 
 }
 
 .current {
@@ -84,7 +82,8 @@ header {
 }
 
 .current.black {
-  box-shadow: -5px -5px 5px #36363670, 5px 5px 5px #000000;
+  box-shadow: none;
+  color: whitesmoke !important;
 }
 
 #header-name {
@@ -168,6 +167,7 @@ header {
   font-size: 1.4em;
   font-weight: normal;
   text-align: left;
+  padding: 0;
   margin-bottom: 0.8em;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -176,6 +176,7 @@ header {
   font-size: 2.5em;
   line-height: 1;
   font-family: "Josefin Sans", sans-serif;
+  text-align: left;
   margin-bottom: 0.2em;
   color: whitesmoke;
 }
@@ -212,6 +213,11 @@ header {
 .download-cv-button:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+}
+
+.download-cv-button svg {
+  height: 1em;
+  margin-left: 1em;
 }
 
 .social svg {
@@ -284,6 +290,7 @@ header {
 
 #portfolio-section h2 {
   box-shadow: -5px -5px 5px #303030, 5px 5px 5px #101010;
+  color: whitesmoke;
 }
 
 .projects {
@@ -299,7 +306,6 @@ header {
   flex-direction: column;
   text-align: justify;
   background-color: #303030;
-  border: 1px solid #404040;
   font-weight: 300;
 }
 
@@ -380,7 +386,8 @@ header {
 }
 
 #certificates-section h2 {
-  box-shadow: -5px -5px 5px #555555cc, 5px 5px 5px #080808cc
+  box-shadow: -5px -5px 5px #555555cc, 5px 5px 5px #080808cc;
+  color: #fdde2be6;
 }
 
 #certificates-section ul {
@@ -408,7 +415,7 @@ header {
 }
 
 #languages-section h2 {
-  color: var(--secondary-color);
+  color: whitesmoke;
   box-shadow: -5px -5px 5px #303030, 5px 5px 5px #101010;
 }
 
@@ -490,7 +497,7 @@ table tr:last-child td:last-child {
   text-align: center;
 }
 #contact-section h2 {
-  box-shadow: -5px -5px 5px #49494970, 5px 5px 5px #000000
+  box-shadow: -5px -5px 5px #49494970, 5px 5px 5px #000000;
 }
 .contact-container {
   display: flex;
@@ -547,7 +554,7 @@ table tr:last-child td:last-child {
 }
 
 #messageInput {
-  margin-bottom: 10px;
+  margin-bottom: 1.5em;
 }
 
 .contact-form button {
@@ -797,8 +804,8 @@ table tr:last-child td:last-child {
   #header-links li {
     opacity: 0;
   }
-  #header-links li a{
-   padding: 1em 3em;
+  #header-links li a {
+    padding: 1em 3em;
   }
   .current {
     box-shadow: -5px -5px 5px #36363670, 5px 5px 5px #000000;
