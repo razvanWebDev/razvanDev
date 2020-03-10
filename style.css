@@ -64,7 +64,7 @@ header {
   display: flex;
   align-items: center;
   list-style-type: none;
-  transition: padding 0.5s ease-in-out;
+  padding: 1em 0 ;
 }
 
 #header-links li a {
@@ -732,9 +732,6 @@ table tr:last-child td:last-child {
 }
 
 @media only screen and (max-width: 1024px) {
-  #header-links {
-    padding: 1em 0;
-  }
   /* home-section */
   header ul li a {
     margin-left: 0;

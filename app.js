@@ -37,12 +37,10 @@ const showHeaderName = () => {
     if (window.scrollY > 100) {
       headerName.style.opacity = "1";
       header.addClass("yellow-header");
-      nav.style.padding = "0.8em 0";
       links.forEach(link => link.classList.add("black-text"));
     } else {
       headerName.style.opacity = "0";
       header.removeClass("yellow-header");
-      nav.style.padding = "2.5em 0";
       links.forEach(link => link.classList.remove("black-text"));
     }
   }
@@ -70,7 +68,7 @@ const linkCurrentState = () => {
 $(".menuButtons").on("click", function(e) {
   const idName = $(this).attr("data-page");
   const x = window.innerWidth;
-  let headerHeight = $(window).height() * 0.062;
+  let headerHeight = $(window).height() * 0.09;
 
   $("html, body").animate(
     {
