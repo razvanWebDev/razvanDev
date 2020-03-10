@@ -24,14 +24,6 @@
     "skillsUsed": "HTML, CSS, JavaScript."
   },
   {
-    "name": "Personal website - Version 1",
-    "imgPath": "img/projects/CV-RazvanCrisan.png",
-    "codeLink": "https://github.com/razvanWebDev/CV-razvanCrisan",
-    "demoLink": "https://razvanwebdev.github.io/CV-razvanCrisan/",
-    "description": "My first personal website  which I created while learning to code",
-    "skillsUsed": "HTML, CSS, JavaScript, NodeJS, JQuery, AJAX, MySQL, JSON."
-  },
-  {
     "name": "Beauty Studio Website",
     "imgPath": "img/projects/beauty-studio.png",
     "codeLink": "https://github.com/razvanwebdev/beauty-studio-barnsley",
@@ -54,6 +46,14 @@
     "demoLink": "https://razvanwebdev.github.io/node-agenda-app/public/agenda.html",
     "description": "My first nodeJS app containig CRUD oparations.",
     "skillsUsed": "HTML, CSS, JavaScript, Express NodeJS, JQuery, JSON."
+  },
+  {
+    "name": "Personal website - Version 1",
+    "imgPath": "img/projects/CV-RazvanCrisan.png",
+    "codeLink": "https://github.com/razvanWebDev/CV-razvanCrisan",
+    "demoLink": "https://razvanwebdev.github.io/CV-razvanCrisan/",
+    "description": "My first personal website  which I created while learning to code",
+    "skillsUsed": "HTML, CSS, JavaScript, NodeJS, JQuery, AJAX, MySQL, JSON."
   },
   {
     "name": "Calculator",

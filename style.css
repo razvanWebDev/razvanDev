@@ -260,7 +260,7 @@ header {
 
 /* PORTFOLIO-SECTION */
 #portfolio-section {
-  background-color: #252525;
+  background-color: #202020;
   color: var(--secondary-color);
   text-align: center;
 }
@@ -277,8 +277,8 @@ header {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  background-color: #404040;
-  border: 1px solid #494949;
+  background-color: #303030;
+  border: 1px solid #404040;
   font-weight: 300;
  
 }
