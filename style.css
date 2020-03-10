@@ -888,6 +888,7 @@ table tr:last-child td:last-child {
   .aboutMe h1 {
     font-size: 1.7em;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .aboutMe h2 {
