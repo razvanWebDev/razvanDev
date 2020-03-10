@@ -55,10 +55,13 @@ const linkCurrentState = () => {
     const top = $(this).offset().top - nav_height - 200;
     const bottom = top + $(this).outerHeight();
     if (cur_pos >= top && cur_pos <= bottom) {
-      header.find("a").removeClass("current");
+      header.find("a").removeClass("current black");
       let linkName = $(this).attr("id");
       linkName = linkName.slice(0, linkName.length - 8);
       header.find(`a[data-page= ${linkName}]`).addClass("current");
+      if (cur_pos < 100) {
+        header.find(`a[data-page= ${linkName}]`).addClass("black");
+      }
     }
   });
 };

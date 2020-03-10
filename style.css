@@ -17,15 +17,16 @@ body {
 }
 
 section {
-  padding: 8vw;
+  padding: 6em 10vw;
 }
 
 section h2 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2em;
-  width: 100%;
-  text-align: center;
   margin-bottom: 2.5em;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0.5em 2em 0.3em;
 }
 
 a {
@@ -49,7 +50,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 8vw;
+  padding: 0 10vw;
   z-index: 9;
   transition: all 0.3s ease-in;
 }
@@ -63,21 +64,27 @@ header {
   display: flex;
   align-items: center;
   list-style-type: none;
-  padding: 2.5em 0;
   transition: padding 0.5s ease-in-out;
 }
 
 #header-links li a {
-  margin-left: 3em;
+  margin-left: 1.5em;
+  padding: 0.5em 1em;
   color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border-radius: 5px;
+ 
 }
 
 .current {
-  text-decoration: underline;
+  box-shadow: -3px -3px 3px #ffed8893, 3px 3px 3px #b9a012e6;
+}
+
+.current.black {
+  box-shadow: -5px -5px 5px #36363670, 5px 5px 5px #000000;
 }
 
 #header-name {
@@ -234,9 +241,17 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url(img/google-grants-text-2556951.jpg);
+  background-image: linear-gradient(
+      rgba(238, 238, 238, 0.7) 0%,
+      rgba(238, 238, 238, 0.5) 100%
+    ),
+    url(img/google-grants-text-2556951.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#skills-section h2 {
+  box-shadow: -5px -5px 5px #ffffffe8, 5px 5px 5px #aaaaaa;
 }
 
 .skills-types {
@@ -265,6 +280,10 @@ header {
   background-color: #202020;
   color: var(--secondary-color);
   text-align: center;
+}
+
+#portfolio-section h2 {
+  box-shadow: -5px -5px 5px #303030, 5px 5px 5px #101010;
 }
 
 .projects {
@@ -357,11 +376,11 @@ header {
   background-position-y: 60%;
   color: whitesmoke;
   text-shadow: 1px 1px 3px rgba(20, 20, 20, 0.8);
+  text-align: center;
 }
 
 #certificates-section h2 {
-  width: 100%;
-  text-align: center;
+  box-shadow: -5px -5px 5px #555555cc, 5px 5px 5px #080808cc
 }
 
 #certificates-section ul {
@@ -390,6 +409,7 @@ header {
 
 #languages-section h2 {
   color: var(--secondary-color);
+  box-shadow: -5px -5px 5px #303030, 5px 5px 5px #101010;
 }
 
 #languages-section table {
@@ -467,11 +487,16 @@ table tr:last-child td:last-child {
   background-position-y: 50%;
   color: whitesmoke;
   text-shadow: 1px 1px 3px rgba(20, 20, 20, 0.8);
+  text-align: center;
+}
+#contact-section h2 {
+  box-shadow: -5px -5px 5px #49494970, 5px 5px 5px #000000
 }
 .contact-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: left;
 }
 
 .contact-container h3 {
@@ -700,6 +725,9 @@ table tr:last-child td:last-child {
 }
 
 @media only screen and (max-width: 1024px) {
+  #header-links {
+    padding: 1em 0;
+  }
   /* home-section */
   header ul li a {
     margin-left: 0;
@@ -768,6 +796,12 @@ table tr:last-child td:last-child {
   }
   #header-links li {
     opacity: 0;
+  }
+  #header-links li a{
+   padding: 1em 3em;
+  }
+  .current {
+    box-shadow: -5px -5px 5px #36363670, 5px 5px 5px #000000;
   }
   .burger {
     display: block;
