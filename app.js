@@ -12,6 +12,7 @@ const resume = $(".resume");
 const links = document.querySelectorAll(".menuButtons");
 const sections = $("section");
 const labelTransform = document.querySelectorAll(".label-transform");
+const parallaxSections = document.querySelectorAll(".parallax");
 
 // Show header name & background depending on scroll and window width
 const showHeaderName = () => {
@@ -185,13 +186,35 @@ const moveDown = input => {
     currenLAbel.classList.remove("moveUp");
   }
 };
-// Event listeners
+
+// Parallax effect
+const parallax = (section, speed) => {
+  if (
+    window.scrollY > section.offsetTop - window.innerHeight &&
+    window.scrollY < section.offsetTop + section.offsetHeight
+  ) {
+    const sectionId = section.getAttribute("id");
+    const item = document.querySelector(`#${sectionId}`);
+    const distance = window.scrollY - item.offsetTop;
+    item.style.backgroundPosition = `0px ${distance * speed}px`;
+  } else {
+    return undefined;
+  }
+};
+
+// EVENT LISTENERS
 window.addEventListener("mouseup", closeNav);
 window.addEventListener("load", linkCurrentState);
 window.addEventListener("scroll", linkCurrentState);
 window.addEventListener("scroll", showHeaderName);
 window.addEventListener("load", showHeaderName);
-
+// Parralax event listeners
+window.addEventListener("scroll", function() {
+  parallaxSections.forEach(section => {
+    parallax(section, 0.5);
+  });
+});
+// Input labels event listeners
 labelTransform.forEach(input =>
   input.addEventListener("focus", () => moveUp(input))
 );
