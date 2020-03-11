@@ -22,11 +22,11 @@ section {
 
 section h2 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2em;
+  font-size: 1.7em;
   margin-bottom: 2.5em;
   border-radius: 10px;
   display: inline-block;
-  padding: 0.5em 2em 0.3em;
+  padding: 0.5em 1.5em 0.3em;
 }
 
 a {
@@ -255,7 +255,7 @@ header {
   position: relative;
   background-image: url(img/google-grants-text-2556951.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: calc(100% + 100px);
   z-index: 1;
 }
 
@@ -394,7 +394,7 @@ header {
   background-image: url(img/Certificates_section_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 60%;
+  /* background-position-y: 60%; */
   color: whitesmoke;
   text-shadow: 1px 1px 3px rgba(20, 20, 20, 0.8);
   text-align: center;
@@ -837,7 +837,8 @@ table tr:last-child td:last-child {
   #header-links li a {
     padding: 1em 3em;
   }
-  .current {
+  #header-links li a.current {
+    color: whitesmoke;
     box-shadow: -5px -5px 5px #36363670, 5px 5px 5px #000000;
   }
   .burger {
