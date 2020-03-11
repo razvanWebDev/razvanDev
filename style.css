@@ -199,10 +199,17 @@ header {
   transition: all 0.3s ease;
 }
 
+
 .portfolio-btn {
   background-color: var(--secondary-color);
   margin-right: 2em;
   margin-bottom: 16px;
+ 
+}
+
+.portfolio-btn:hover {
+  background-color: transparent;
+  color: var(--secondary-color);
 }
 
 .download-cv-button {
@@ -217,7 +224,7 @@ header {
 
 .download-cv-button svg {
   height: 1em;
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
 
 .social svg {
@@ -284,6 +291,7 @@ header {
 /* PORTFOLIO-SECTION */
 #portfolio-section {
   background-color: #202020;
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
 }
@@ -297,7 +305,7 @@ header {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 5em;
+  grid-gap: 7em;
   font-size: 0.9em;
 }
 
@@ -305,7 +313,7 @@ header {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  background-color: #303030;
+  background-color: #353535;
   font-weight: 300;
 }
 
@@ -339,7 +347,7 @@ header {
 }
 
 .img-container:hover .project-pic {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .project-links {
@@ -398,6 +406,9 @@ header {
 #certificates-section li {
   font-size: 1.3em;
   padding-bottom: 1em;
+}
+#certificates-section li:last-child {
+  padding-bottom: 0;
 }
 
 #certificates-section a {
@@ -562,10 +573,14 @@ table tr:last-child td:last-child {
   height: 3em;
   background-color: var(--secondary-color);
   border: none;
-  border-bottom: 2px solid var(--secondary-color);
-  font-size: 0.9em;
+  border: 1px solid var(--secondary-color);
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color:transparent;
+  color: var(--secondary-color);
 }
 
 .contact-details {
