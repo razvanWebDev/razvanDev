@@ -234,7 +234,7 @@ header {
   transition: all 0.2s ease-in-out;
   opacity: 0;
   animation-delay: 1s;
-  color: yellow;
+  color: var(--secondary-color);
 }
 
 .linkedIn {
@@ -259,6 +259,7 @@ header {
       rgba(238, 238, 238, 0.5) 100%
     ),
     url(img/google-grants-text-2556951.jpg);
+    background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -385,6 +386,7 @@ header {
       rgba(8, 8, 8, 0.7) 100%
     ),
     url(img/Certificates_section_bg.jpg);
+    background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 60%;
@@ -496,13 +498,13 @@ table tr:last-child td:last-child {
 /* CONTACT-SECTION */
 #contact-section {
   background-image: linear-gradient(
-      rgba(8, 8, 8, 0.6) 0%,
-      rgba(8, 8, 8, 0.8) 100%
+      rgba(8, 8, 8, 0.5) 0%,
+      rgba(8, 8, 8, 0.7) 100%
     ),
     url(img/Contact_section_bg.jpg);
+    background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 50%;
   color: whitesmoke;
   text-shadow: 1px 1px 3px rgba(20, 20, 20, 0.8);
   text-align: center;
