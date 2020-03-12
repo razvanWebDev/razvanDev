@@ -4,15 +4,15 @@
     "imgPath": "img/projects/ARPIA_website.jpg",
     "codeLink": "https://github.com/razvanWebDev/ARPIA_website",
     "demoLink": "https://www.arpia-filialacluj.ro/",
-    "description": "Responsive website built for A.R.P.I.A. (Romanian Association for Aeronautics History and Propaganda) in Cluj-Napoca, contains info, events, photo & video galleries, e-books, contact form and embedded credit card payments.",
-    "skillsUsed": "HTML, CSS, Vanilla JavaScript, NodeJS, JSON, AJAX, PHP."
+    "description": "Responsive website built for A.R.P.I.A. (Romanian Association for Aeronautics History and Propaganda) in Cluj-Napoca, contains info, events, photo & video galleries, e-books and contact form.",
+    "skillsUsed": "HTML, CSS, JavaScript, NodeJS, JSON, AJAX, PHP."
   },
   {
     "name": "Gym Member App",
     "imgPath": "img/projects/fitness-app.png",
     "codeLink": "https://github.com/razvanwebdev/node-fitness-members-app",
     "demoLink": "https://razvanwebdev.github.io/node-fitness-members-app/public/index.html",
-    "description": "An app  designed to manage Gym Member subscriptions. Allows CRUD operationd and contains multiple member editable features like contract extension, adding or deleting gym sessions and editing member info.",
+    "description": "An app  designed to manage Gym Member subscriptions. Allows CRUD operationd and contains multiple member editable features such as contract extension, adding or deleting gym sessions and editing member info.",
     "skillsUsed": "HTML, CSS, JavaScript, Express, NodeJS, JQuery, MySQL, phpMyAdmin, JSON, Gravatar."
   },
   {
@@ -28,7 +28,7 @@
     "imgPath": "img/projects/beauty-studio.png",
     "codeLink": "https://github.com/razvanwebdev/beauty-studio-barnsley",
     "demoLink": "https://razvanwebdev.github.io/beauty-studio-barnsley/",
-    "description": "Responsive beauty studio website which contains a welcome page, price listings, an offers page and contact.",
+    "description": "Responsive beauty studio website, has a welcome page, price listings, an offers page and contact.",
     "skillsUsed": "HTML, CSS, JavaScript, JQuery, PHP, embeded Google Maps."
   },
   {
@@ -44,7 +44,7 @@
     "imgPath": "img/projects/PhoneBook.png",
     "codeLink": "https://github.com/razvanwebdev/node-agenda-app",
     "demoLink": "https://razvanwebdev.github.io/node-agenda-app/public/agenda.html",
-    "description": "My first nodeJS app containig CRUD oparations.",
+    "description": "NodeJS phonebook app that allows CRUD oparations and saves contacts in JSON file.",
     "skillsUsed": "HTML, CSS, JavaScript, Express NodeJS, JQuery, JSON."
   },
   {

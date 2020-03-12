@@ -254,8 +254,9 @@ header {
   align-items: center;
   position: relative;
   background-image: url(img/google-grants-text-2556951.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: calc(100% + 100px);
+  background-size: cover;
   z-index: 1;
 }
 
@@ -267,7 +268,7 @@ header {
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    rgba(238, 238, 238, 0.4) 0%,
+    rgba(238, 238, 238, 0.7) 0%,
     rgba(238, 238, 238, 0.2) 100%
   );
   z-index: -1;
@@ -392,9 +393,9 @@ header {
 #certificates-section {
   position: relative;
   background-image: url(img/Certificates_section_bg.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position-y: 60%; */
   color: whitesmoke;
   text-shadow: 1px 1px 3px rgba(20, 20, 20, 0.8);
   text-align: center;
@@ -517,6 +518,7 @@ table tr:last-child td:last-child {
 #contact-section {
   position: relative;
   background-image: url(img/Contact_section_bg.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   color: whitesmoke;

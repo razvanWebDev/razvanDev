@@ -190,15 +190,19 @@ const moveDown = input => {
 // Parallax effect
 const parallax = (section, speed) => {
   if (
+    // only apply when the element is in range
     window.scrollY > section.offsetTop - window.innerHeight &&
     window.scrollY < section.offsetTop + section.offsetHeight
   ) {
     const sectionId = section.getAttribute("id");
     const item = document.querySelector(`#${sectionId}`);
-    const distance = window.scrollY - item.offsetTop;
-    item.style.backgroundPosition = `0px ${distance * speed}px`;
-  } else {
-    return undefined;
+    const distance =
+      ((window.scrollY - item.offsetTop) / window.innerHeight) * 10;
+    if (sectionId === "skills-section") {
+      item.style.backgroundPosition = `0px ${distance * speed}px`;
+    }else{
+      item.style.backgroundPosition = `center ${distance * speed}px`;
+    }
   }
 };
 
@@ -211,7 +215,7 @@ window.addEventListener("load", showHeaderName);
 // Parralax event listeners
 window.addEventListener("scroll", function() {
   parallaxSections.forEach(section => {
-    parallax(section, 0.5);
+    parallax(section, -35);
   });
 });
 // Input labels event listeners
@@ -221,6 +225,7 @@ labelTransform.forEach(input =>
 labelTransform.forEach(input =>
   input.addEventListener("focusout", () => moveDown(input))
 );
+
 
 loadProjects();
 navSlide();
