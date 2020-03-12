@@ -274,10 +274,6 @@ header {
   z-index: -1;
 }
 
-#skills-section h2 {
-  box-shadow: -5px -5px 5px #ffffffe8, 5px 5px 5px #aaaaaa;
-}
-
 .skills-types {
   width: 100%;
   display: flex;
@@ -301,14 +297,19 @@ header {
 
 /* PORTFOLIO-SECTION */
 #portfolio-section {
-  background-color: #202020;
-  background-color: var(--primary-color);
+  background-image: linear-gradient(
+      rgba(8, 8, 8, 0.93) 0%,
+      rgba(8, 8, 8, 0.93) 100%
+    ),
+    url(img/header-background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--secondary-color);
   text-align: center;
 }
 
 #portfolio-section h2 {
-  box-shadow: -5px -5px 5px #303030, 5px 5px 5px #101010;
   color: whitesmoke;
 }
 
@@ -324,7 +325,7 @@ header {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  background-color: #353535;
+  background-color: #252525;
   font-weight: 300;
 }
 
@@ -414,11 +415,6 @@ header {
   z-index: -1;
 }
 
-#certificates-section h2 {
-  box-shadow: -5px -5px 5px #555555cc, 5px 5px 5px #080808cc;
-  color: #fdde2be6;
-}
-
 #certificates-section ul {
   list-style-position: inside;
   text-align: justify;
@@ -443,12 +439,18 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-color);
+  background-image: linear-gradient(
+      rgba(8, 8, 8, 0.93) 0%,
+      rgba(8, 8, 8, 0.93) 100%
+    ),
+    url(img/header-background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #languages-section h2 {
   color: whitesmoke;
-  box-shadow: -5px -5px 5px #303030, 5px 5px 5px #101010;
 }
 
 #languages-section table {
@@ -527,9 +529,6 @@ table tr:last-child td:last-child {
   z-index: 1;
 }
 
-#contact-section h2 {
-  box-shadow: -5px -5px 5px #49494970, 5px 5px 5px #000000;
-}
 .contact-container {
   display: flex;
   justify-content: space-between;
