@@ -51,7 +51,7 @@ const showHeaderName = () => {
 const linkCurrentState = () => {
   const cur_pos = $(this).scrollTop();
   sections.each(function() {
-    const top = $(this).offset().top - nav_height - 200;
+    const top = $(this).offset().top - nav_height - window.innerHeight / 2;
     const bottom = top + $(this).outerHeight();
     if (cur_pos >= top && cur_pos <= bottom) {
       header.find("a").removeClass("current black");
@@ -68,7 +68,6 @@ const linkCurrentState = () => {
 //Scroll page on click
 $(".menuButtons").on("click", function(e) {
   const idName = $(this).attr("data-page");
-  const x = window.innerWidth;
   let headerHeight = $(window).height() * 0.09;
 
   $("html, body").animate(
@@ -200,7 +199,7 @@ const parallax = (section, speed) => {
       ((window.scrollY - item.offsetTop) / window.innerHeight) * 10;
     if (sectionId === "skills-section") {
       item.style.backgroundPosition = `0px ${distance * speed}px`;
-    }else{
+    } else {
       item.style.backgroundPosition = `center ${distance * speed}px`;
     }
   }
@@ -225,7 +224,6 @@ labelTransform.forEach(input =>
 labelTransform.forEach(input =>
   input.addEventListener("focusout", () => moveDown(input))
 );
-
 
 loadProjects();
 navSlide();
