@@ -1,6 +1,5 @@
 //DOM elements
 const header = $("header");
-const nav_height = header.outerHeight();
 const headerName = document.querySelector("#header-name");
 const burger = document.querySelector(".burger");
 const burger1 = document.querySelector(".line1");
@@ -14,53 +13,17 @@ const sections = $("section");
 const labelTransform = document.querySelectorAll(".label-transform");
 const parallaxSections = document.querySelectorAll(".parallax");
 
-// Show header name & background depending on scroll and window width
-const showHeaderName = () => {
-  const width = window.innerWidth;
-  if (width <= 768) {
-    headerName.style.color = "#fdde2be6";
-    if (window.scrollY < 30) {
-      headerName.style.display = "none";
-    } else {
-      headerName.style.display = "block";
-    }
-  } else if (width > 768 && width <= 1024) {
-    headerName.style.display = "none";
-    if (window.scrollY > 100) {
-      header.addClass("yellow-header");
-      links.forEach(link => link.classList.add("black-text"));
-    } else {
-      header.removeClass("yellow-header");
-      links.forEach(link => link.classList.remove("black-text"));
-    }
-  } else {
-    headerName.style.display = "block";
-    if (window.scrollY > 100) {
-      headerName.style.opacity = "1";
-      header.addClass("yellow-header");
-      links.forEach(link => link.classList.add("black-text"));
-    } else {
-      headerName.style.opacity = "0";
-      header.removeClass("yellow-header");
-      links.forEach(link => link.classList.remove("black-text"));
-    }
-  }
-};
-
 //Change active state navlinks on scroll
 const linkCurrentState = () => {
   const cur_pos = $(this).scrollTop();
   sections.each(function() {
-    const top = $(this).offset().top - nav_height - window.innerHeight / 2;
+    const top = $(this).offset().top - window.innerHeight / 3;
     const bottom = top + $(this).outerHeight();
     if (cur_pos >= top && cur_pos <= bottom) {
-      header.find("a").removeClass("current black");
+      header.find("a").removeClass("current");
       let linkName = $(this).attr("id");
       linkName = linkName.slice(0, linkName.length - 8);
       header.find(`a[data-page= ${linkName}]`).addClass("current");
-      if (cur_pos < 100) {
-        header.find(`a[data-page= ${linkName}]`).addClass("black");
-      }
     }
   });
 };
@@ -68,7 +31,7 @@ const linkCurrentState = () => {
 //Scroll page on click
 $(".menuButtons").on("click", function(e) {
   const idName = $(this).attr("data-page");
-  let headerHeight = $(window).height() * 0.09;
+  let headerHeight = $(window).height() * 0.099;
 
   $("html, body").animate(
     {
@@ -209,8 +172,6 @@ const parallax = (section, speed) => {
 window.addEventListener("mouseup", closeNav);
 window.addEventListener("load", linkCurrentState);
 window.addEventListener("scroll", linkCurrentState);
-window.addEventListener("scroll", showHeaderName);
-window.addEventListener("load", showHeaderName);
 // Parralax event listeners
 window.addEventListener("scroll", function() {
   parallaxSections.forEach(section => {

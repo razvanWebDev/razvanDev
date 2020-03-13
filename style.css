@@ -35,40 +35,27 @@ a {
   transition: all 0.1s;
 }
 
-.black-text {
-  color: var(--primary-color) !important;
-}
-
-.white-text {
-  color: whitesmoke;
-}
-
 /* HEADER */
 header {
   position: fixed;
+  left: 0;
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 0 10vw;
   z-index: 9;
-  transition: all 0.3s ease-in;
-}
-
-.yellow-header {
-  background-color: rgba(253, 222, 43, 0.98) !important;
-  box-shadow: 0px 0px 10px 1px rgba(20, 20, 20, 0.8);
 }
 
 #header-links {
-  display: flex;
-  align-items: center;
+  background-color: rgba(8, 8, 8, 0.93);
+  border: 1px solid var(--secondary-color);
+  border-left: none;
+  border-radius: 0 30px 30px 0;
   list-style-type: none;
-  padding: 1em 0;
 }
 
 #header-links li a {
-  padding: 0.5em 2em;
+  padding: 1em;
   color: var(--secondary-color);
   display: flex;
   flex-direction: column;
@@ -76,20 +63,18 @@ header {
   align-items: center;
   border-radius: 5px;
 }
-
-.current {
-  box-shadow: -3px -3px 3px #ffed8893, 3px 3px 3px #b9a012e6;
+#header-links svg {
+  width: 35px;
 }
 
-.current.black {
-  box-shadow: none;
+.current {
   color: whitesmoke !important;
 }
 
 #header-name {
+  display: none;
   cursor: default;
   text-align: right;
-  color: var(--primary-color);
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -97,10 +82,12 @@ header {
   font-size: 1.3em;
   line-height: 1;
   letter-spacing: 2px;
+  color: whitesmoke;
 }
 
 #header-name h2 {
   font-size: 0.9em;
+  color: var(--secondary-color);
 }
 
 .burger {
@@ -803,29 +790,37 @@ table tr:last-child td:last-child {
     overflow: hidden;
   }
   header {
-    background-color: rgba(20, 20, 20, 0.85);
+    position: fixed;
+    top: 0;
     height: 10vh;
-    border: none;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10vw;
+    background-color: rgba(20, 20, 20, 0.85);
   }
-  #header-name h1 {
-    color: whitesmoke;
+
+  header #header-name {
+    display: block;
   }
+
   #header-links {
     position: absolute;
     right: 0px;
     top: 0;
     height: 90vh;
     margin-top: 10vh;
-    z-index: 1;
+    padding: 40px 0;
     background-color: rgba(20, 20, 20, 0.85);
+    border: none;
+    border-radius: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 40px 0;
     width: 60%;
     transform: translateX(100%);
     animation: navSlideOut 0s forwards;
+    z-index: 1;
   }
   #header-links li:last-of-type {
     margin-bottom: 10vh;
