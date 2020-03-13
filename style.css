@@ -308,7 +308,7 @@ header {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 7em;
+  grid-gap: 10em;
   font-size: 0.9em;
 }
 
@@ -861,8 +861,9 @@ table tr:last-child td:last-child {
     line-height: 1.1;
   }
   /* projects-section */
-  #portfolio-section .projects .projects {
-    grid-template-columns: 1fr;
+  #portfolio-section .projects {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7em;
   }
 
   /* languages-section */
@@ -937,6 +938,7 @@ table tr:last-child td:last-child {
   }
   #portfolio-section .projects {
     grid-template-columns: 1fr;
+    grid-gap: 7em;
   }
   .project-description {
     padding: 2em;
