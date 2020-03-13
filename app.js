@@ -128,7 +128,7 @@ function displayProjects(projects) {
               </div>
               <div class="project-description">
                 <h3>${name} </h3>
-                <p>${description}<br><br><span class="white-text">Skills used: </span>${skillsUsed}</p>
+                <p>${description}<br><br><span>Skills used: </span>${skillsUsed}</p>
               </div>  
             </div>`;
   });
