@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto:300,400&display=swap");
 :root {
-  --primary-color: #252525;
+  --primary-color: #080808;
   --secondary-color: #fdde2be6;
 }
 
@@ -13,7 +13,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: rgb(53, 53, 53);
+  color: var(--primary-color);
+  position: relative;
+  z-index: -10;
 }
 
 section {
@@ -68,8 +70,8 @@ header {
   width: 35px;
 }
 
-.current {
-  color: whitesmoke !important;
+#header-links li a.current {
+  color: whitesmoke;
 }
 
 #header-name {
@@ -294,13 +296,15 @@ header {
   background-size: cover;
   color: var(--secondary-color);
   text-align: center;
+  position: relative;
+  z-index: -2;
 }
 
 #portfolio-section h2 {
   color: whitesmoke;
 }
 
-.projects {
+#portfolio-section .projects {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -308,16 +312,29 @@ header {
   font-size: 0.9em;
 }
 
-.project-div {
+#portfolio-section .projects .project-div {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  background-color: #252525;
+  position: relative;
+  background-color: #111111;
   font-weight: 300;
 }
 
+#portfolio-section .projects .project-div::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  background: var(--secondary-color);
+  transform: skew(2deg, 2deg);
+  z-index: -1;
+}
+
 .project-description {
-  padding: 3em;
+  padding: 10%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -374,7 +391,7 @@ header {
 
 .btn:hover {
   background-color: var(--primary-color);
-  color: rgba(253, 222, 43, 0.902);
+  color: var(--secondary-color);
 }
 
 /* CERTIFICATES-SECTION */
@@ -408,7 +425,7 @@ header {
 }
 
 #certificates-section li {
-  font-size: 1.3em;
+  font-size: 1.4em;
   padding-bottom: 1em;
 }
 #certificates-section li:last-child {
@@ -753,15 +770,6 @@ table tr:last-child td:last-child {
 }
 
 @media only screen and (max-width: 1024px) {
-  /* home-section */
-  header ul li a {
-    margin-left: 0;
-  }
-  header ul {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
   .aboutMe {
     width: 60%;
   }
@@ -769,9 +777,8 @@ table tr:last-child td:last-child {
     bottom: 5vh;
   }
   /* projects-section */
-  .projects {
+  #portfolio-section .projects {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 6em;
   }
   /* languages-page */
   #languages-section table {
@@ -833,10 +840,7 @@ table tr:last-child td:last-child {
   #header-links li a {
     padding: 1em 3em;
   }
-  #header-links li a.current {
-    color: whitesmoke;
-    box-shadow: -5px -5px 5px #36363670, 5px 5px 5px #000000;
-  }
+
   .burger {
     display: block;
   }
@@ -857,7 +861,7 @@ table tr:last-child td:last-child {
     line-height: 1.1;
   }
   /* projects-section */
-  .projects {
+  #portfolio-section .projects .projects {
     grid-template-columns: 1fr;
   }
 
@@ -922,17 +926,14 @@ table tr:last-child td:last-child {
     text-align: center;
     margin-bottom: 20px;
   }
-  .portfolio-btn {
-    /* margin: 0 0 20px; */
-  }
 
   /* skills page */
   .skills-types:first-of-type {
     margin-bottom: 3.5em;
   }
   /* projects page */
-  .projects {
-    grid-gap: 3.5em;
+  #portfolio-section .projects {
+    grid-template-columns: 1fr;
   }
   .project-description {
     padding: 2em;

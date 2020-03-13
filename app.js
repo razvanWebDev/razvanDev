@@ -116,15 +116,15 @@ function displayProjects(projects) {
 
     return `<div class="project-div">
               <div class="img-container">
-                <img src = ${image} alt=${name} class="project-pic">
-                <div class="project-links">
-                  <a href="${codeLink}" target="_blank" rel="noopener" title="View Code">
-                    <button class="btn">Code</button>
-                  </a>
-                  <a href="${demoLink}" target="_blank" rel="noopener" title="View Demo">
-                    <button class="btn">Demo</button>
-                 </a>
-                </div>
+                  <img src = ${image} alt=${name} class="project-pic">
+                  <div class="project-links">
+                    <a href="${codeLink}" target="_blank" rel="noopener" title="View Code">
+                      <button class="btn">Code</button>
+                    </a>
+                    <a href="${demoLink}" target="_blank" rel="noopener" title="View Demo">
+                      <button class="btn">Demo</button>
+                    </a>
+                  </div>
               </div>
               <div class="project-description">
                 <h3>${name} </h3>
