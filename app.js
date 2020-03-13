@@ -176,7 +176,7 @@ window.addEventListener("scroll", linkCurrentState);
 // Parralax event listeners
 window.addEventListener("scroll", function() {
   parallaxSections.forEach(section => {
-    parallax(section, -35);
+    parallax(section, -30);
   });
 });
 // Input labels event listeners

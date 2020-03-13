@@ -368,29 +368,29 @@ header {
 
 .project-links {
   position: absolute;
-  bottom: 15%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   display: flex;
   opacity: 0;
   width: 100%;
   justify-content: space-evenly;
-  border-radius: 30px;
+  transition: all .3s;
+  
 }
 
 .project-links .btn {
   background-color: var(--secondary-color);
-  border-radius: 3px;
-  font-size: 0.9em;
-  border: none;
+  border: 1px solid var(--secondary-color);
   outline: none;
-  padding: 3px 18px;
+  padding: 0.6em 2em;
   font-weight: bold;
   cursor: pointer;
+  transition: all .3s;
 }
 
 .project-links .btn:hover {
-  background-color: var(--primary-color);
+  background-color: transparent;
   color: var(--secondary-color);
 }
 
