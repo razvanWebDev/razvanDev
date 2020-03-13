@@ -30,9 +30,10 @@ const linkCurrentState = () => {
 
 //Scroll page on click
 $(".menuButtons").on("click", function(e) {
+  e.preventDefault();
+  const headerHeight =
+    window.innerWidth <= 768 ? $(window).height() * 0.099 : 0;
   const idName = $(this).attr("data-page");
-  let headerHeight = $(window).height() * 0.099;
-
   $("html, body").animate(
     {
       scrollTop: $("#" + idName + "-section").offset().top - headerHeight
