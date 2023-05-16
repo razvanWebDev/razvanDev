@@ -163,7 +163,7 @@ header {
 }
 
 .aboutMe h1 {
-  font-size: 2.5em;
+  font-size: 1.6em;
   line-height: 1;
   font-family: "Josefin Sans", sans-serif;
   text-align: left;
@@ -879,6 +879,9 @@ table tr:last-child td:last-child {
     padding-left: 3em;
     width: 100%;
   }
+  .aboutMe h1 {
+    font-size: 1em;
+  }
 
   .aboutMe p {
     line-height: 1.1;
@@ -941,7 +944,7 @@ table tr:last-child td:last-child {
   }
 
   .aboutMe h1 {
-    font-size: 1.7em;
+    font-size: 1em;
     margin-bottom: 20px;
     text-align: center;
   }
