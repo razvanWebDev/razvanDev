@@ -118,8 +118,8 @@ header {
   min-height: 100vh;
   padding: 30vh 8vw 5vh;
   background-image: linear-gradient(
-      rgba(8, 8, 8, 0.93) 0%,
-      rgba(8, 8, 8, 0.93) 100%
+      rgba(8, 8, 8, 0.95) 0%,
+      rgba(8, 8, 8, 0.95) 100%
     ),
     url(img/header-background.jpg);
   background-repeat: no-repeat;
@@ -242,7 +242,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  background-image: url(img/google-grants-text-2556951.jpg);
+  background-image: url(img/skills_section_bg.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -256,7 +256,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(8, 8, 8, 0.7);
+  background: rgba(8, 8, 8, 0.9);
   z-index: -1;
 }
 
@@ -301,8 +301,8 @@ header {
 /* PORTFOLIO-SECTION */
 #portfolio-section {
   background-image: linear-gradient(
-      rgba(8, 8, 8, 0.93) 0%,
-      rgba(8, 8, 8, 0.93) 100%
+      rgba(8, 8, 8, 0.95) 0%,
+      rgba(8, 8, 8, 0.95) 100%
     ),
     url(img/header-background.jpg);
   background-attachment: fixed;
@@ -433,7 +433,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(8, 8, 8, 0.5) 0%, rgba(8, 8, 8, 0.7) 100%);
+  background: linear-gradient(rgba(8, 8, 8, 0.9) 0%, rgba(8, 8, 8, 0.9) 100%);
   z-index: -1;
 }
 
@@ -462,8 +462,8 @@ header {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(
-      rgba(8, 8, 8, 0.93) 0%,
-      rgba(8, 8, 8, 0.93) 100%
+      rgba(8, 8, 8, 0.95) 0%,
+      rgba(8, 8, 8, 0.95) 100%
     ),
     url(img/header-background.jpg);
   /* background-attachment: fixed; */
@@ -541,12 +541,13 @@ table tr:last-child td:last-child {
 /* CONTACT-SECTION */
 #contact-section {
   position: relative;
-  background-image: url(img/Contact_section_bg.jpg);
+  background-image: url(img/finger-g23f7346a0_1920.jpg);
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: center;
   color: whitesmoke;
-  text-shadow: 1px 1px 3px rgba(20, 20, 20, 0.8);
+  text-shadow: 1px 1px 3px rgba(20, 20, 20, 0.9);
   text-align: center;
   z-index: 1;
 }
@@ -664,7 +665,7 @@ table tr:last-child td:last-child {
 
 /* FOOTER-SECTION */
 #footer-section {
-  padding: 2em;
+  padding: 1.7em;
   width: 100%;
   background-color: var(--secondary-color);
   display: flex;

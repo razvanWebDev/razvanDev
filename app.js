@@ -159,13 +159,8 @@ const parallax = (section, speed) => {
   ) {
     const sectionId = section.getAttribute("id");
     const item = document.querySelector(`#${sectionId}`);
-    const distance =
-      ((window.scrollY - item.offsetTop) / window.innerHeight) * 10;
-    if (sectionId === "skills-section") {
-      item.style.backgroundPosition = `0px ${distance * speed}px`;
-    } else {
+    const distance = ((window.scrollY - item.offsetTop) / window.innerHeight) * 10;
       item.style.backgroundPosition = `center ${distance * speed}px`;
-    }
   }
 };
 
