@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto:200,300,400,500,600&display=swap");
 :root {
   --primary-color: #080808;
   --secondary-color: #fdde2be6;
@@ -13,6 +13,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
   color: var(--primary-color);
   position: relative;
   z-index: -10;
@@ -118,8 +119,8 @@ header {
   min-height: 100vh;
   padding: 30vh 8vw 5vh;
   background-image: linear-gradient(
-      rgba(8, 8, 8, 0.95) 0%,
-      rgba(8, 8, 8, 0.95) 100%
+      rgba(10, 10, 10, 0.95) 0%,
+      rgba(10, 10, 10, 0.95) 100%
     ),
     url(img/header-background.jpg);
   background-repeat: no-repeat;
@@ -301,10 +302,11 @@ header {
 /* PORTFOLIO-SECTION */
 #portfolio-section {
   background-image: linear-gradient(
-      rgba(8, 8, 8, 0.95) 0%,
-      rgba(8, 8, 8, 0.95) 100%
+      rgba(12, 12, 12, 0.95) 0%,
+      rgba(12, 12, 12, 0.95) 100%
     ),
     url(img/header-background.jpg);
+
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -332,19 +334,10 @@ header {
   text-align: justify;
   position: relative;
   background-color: #111111;
-  font-weight: 300;
-}
-
-#portfolio-section .projects .project-div::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  bottom: -2px;
-  left: -2px;
-  background: #fddd2b98;
-  transform: skew(2deg, 2deg);
-  z-index: -1;
+  font-weight: 200;
+  box-shadow: 15px 15px 30px rgb(1, 1, 1),
+             -15px -15px 30px rgb(25, 25, 25);  
+  overflow: hidden;
 }
 
 .img-container {
@@ -354,6 +347,7 @@ header {
 .project-pic {
   width: 100%;
   transition-duration: 0.3s;
+  display: block;
 }
 
 .project-pic:hover + .project-links,
@@ -392,7 +386,18 @@ header {
   color: var(--secondary-color);
 }
 
-#portfolio-section .projects .project-div h3 {
+#portfolio-section .projects .project-description {
+  padding: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative;
+  font-weight: 200;
+}
+
+#portfolio-section .projects .project-description  h3 {
   display: block;
   text-align: center;
   margin-bottom: 2em;
@@ -400,16 +405,83 @@ header {
   font-weight: 400;
 }
 
-#portfolio-section .projects .project-description {
-  padding: 10%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .project-description p span {
   color: whitesmoke;
+}
+
+/* SKEW EFFECT */
+/* #portfolio-section .projects .project-div::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  background: #fddd2b80;
+  transform: skew(1deg, 1deg);
+  z-index: -1;
+} */
+
+/* OPTIONAL ANIMATION */
+/* #portfolio-section .projects .project-description::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(-45deg, var(--secondary-color) 0%, var(--secondary-color) 100% );
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+#portfolio-section .projects .project-description:hover::before  {
+  height: 100%;
+} */
+
+#portfolio-section .projects .project-description::before,
+#portfolio-section .projects .project-description::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 0%;
+  background-color: var(--secondary-color);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+#portfolio-section .projects .project-description::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 0px 0 100%;
+}
+
+#portfolio-section .projects .project-description::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 0px;
+}
+
+#portfolio-section .projects .project-description:hover::before,
+#portfolio-section .projects .project-description:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  transition: all 0.5s;
+}
+
+#portfolio-section .projects .project-description:hover h3,
+#portfolio-section .projects .project-description:hover p,
+#portfolio-section .projects .project-description:hover p span {
+  color: var(--primary-color);
+}
+
+#portfolio-section .projects .project-description:hover h3 {
+  font-weight: 500;
+}
+
+#portfolio-section .projects .project-description:hover p,
+#portfolio-section .projects .project-description:hover p span {
+  font-weight: 400;
 }
 
 /* CERTIFICATES-SECTION */
