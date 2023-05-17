@@ -4,7 +4,7 @@
     "imgPath": "img/projects/ARPIA_website.jpg",
     "codeLink": "https://github.com/razvanWebDev/ARPIA_website",
     "demoLink": "https://www.arpia-filialacluj.ro/",
-    "description": "Responsive website built for A.R.P.I.A. (Romanian Association for Aeronautics History and Propaganda) in Cluj-Napoca, contains info, events, photo & video galleries, e-books and contact form.",
+    "description": "Responsive website for A.R.P.I.A. (Romanian Association for Aeronautics History and Propaganda) in Cluj-Napoca. The website showcases event listings, photo and video galleries, downloadable e-books, and a user-friendly contact form for seamless interaction.",
     "skillsUsed": "HTML, CSS, JavaScript, NodeJS, JSON, AJAX, PHP."
   },
   {
@@ -12,7 +12,7 @@
     "imgPath": "img/projects/fitness-app.png",
     "codeLink": "https://github.com/razvanwebdev/node-fitness-members-app",
     "demoLink": "https://razvanwebdev.github.io/node-fitness-members-app/public/index.html",
-    "description": "An app  designed to manage Gym Member subscriptions. Allows CRUD operationd and contains multiple member editable features such as contract extension, adding or deleting gym sessions and editing member info.",
+    "description": "UI for Gym Member Subscription Management App with comprehensive CRUD operations. The app enables administrators with the ability to effortlessly handle subscription management, while providing members with editable features like contract extensions, session management, and member information updates.",
     "skillsUsed": "HTML, CSS, JavaScript, Express, NodeJS, JQuery, MySQL, phpMyAdmin, JSON, Gravatar."
   },
   {
@@ -20,7 +20,7 @@
     "imgPath": "img/projects/typing-test.png",
     "codeLink": "https://github.com/razvanWebDev/Typing-test",
     "demoLink": "https://razvanwebdev.github.io/Typing-test/",
-    "description": "Test your typing speed and at the end of the test, get a customized certificate with your name and results.",
+    "description": "Immersive typing speed test where you can assess your abilities and receive a personalized certificate showcasing your name and comprehensive results. Put your typing skills to the test and obtain a customized certificate highlighting your achievements at the end of the assessment.",
     "skillsUsed": "HTML, CSS, JavaScript."
   },
   {
