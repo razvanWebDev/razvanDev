@@ -110,28 +110,26 @@ function displayProjects(projects) {
     const name = project.name;
     const image = project.imgPath;
     const codeLink = project.codeLink;
+    const codeLinkBtn = codeLink ? '<a href="' + codeLink + '" target="_blank" rel="noopener" title="View Code"><button class="btn">Code</button></a>' : "";
     const demoLink = project.demoLink;
     const description = project.description;
     const skillsUsed = project.skillsUsed;
+    const projectItem = `<div class="project-div">
+                          <div class="img-container">
+                            <img src="${image}" alt="${name}" class="project-pic">
+                            <div class="project-links">
+                              <a href="${demoLink}" target="_blank" rel="noopener" title="View Demo"><button class="btn">Demo</button></a>
+                              ${codeLinkBtn}
+                              </div>
+                          </div>
+                          <div class="project-description">
+                            <h3>${name}</h3>
+                            <p>${description}<br><br><span>Skills used: </span>${skillsUsed}</p>
+                          </div>
+                        </div>`;
 
-    return `<div class="project-div">
-              <div class="img-container">
-                  <img src = ${image} alt=${name} class="project-pic">
-                  <div class="project-links">
-                    <a href="${codeLink}" target="_blank" rel="noopener" title="View Code">
-                      <button class="btn">Code</button>
-                    </a>
-                    <a href="${demoLink}" target="_blank" rel="noopener" title="View Demo">
-                      <button class="btn">Demo</button>
-                    </a>
-                  </div>
-              </div>
-              <div class="project-description">
-                <h3>${name} </h3>
-                <p>${description}<br><br><span>Skills used: </span>${skillsUsed}</p>
-              </div>  
-            </div>`;
-  });
+  return projectItem;
+   });
   resultList.innerHTML = listItems.join("");
 }
 
